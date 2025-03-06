@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrestling Camp in Georgia</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet"> <!-- UFC Font -->
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif; /* Official UFC-style font */
+            background-color: #111; /* Dark background for a striking contrast */
+            color: #fff; /* White text for high visibility */
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .bg-ufc-red {
+            background-color: #D22F27; /* UFC Red */
+        }
+        .text-ufc-gray {
+            color: #B0B0B0; /* UFC Gray for secondary text */
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with a background image and call-to-action -->
+    <section class="bg-cover bg-center h-screen flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1705679547979-93e9f12ce5d7?q=80&w=3564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold">Elite Wrestling Camp</h1>
+            <p class="text-xl mt-4 text-ufc-gray">An exclusive two-week training experience designed for those who demand the best.</p>
+            <p class="text-lg mt-2 text-ufc-gray font-bold">Only 20 spots available – Apply to be accepted.</p>
+            <a href="#register" class="mt-6 inline-block px-8 py-4 bg-ufc-red hover:bg-red-700 text-white font-bold rounded-lg uppercase">Submit Application</a>
+        </div>
+    </section>
+    
+    <!-- About Section: Highlights the camp benefits -->
+    <section class="py-16 px-6 bg-black text-center">
+        <h2 class="text-4xl font-bold text-ufc-red">Train at the Highest Level</h2>
+        <p class="text-lg text-ufc-gray mt-4">This camp is not for everyone. You must apply and be accepted to train alongside the elite. Only those with the right mindset and dedication will be selected.</p>
+        <p class="text-lg text-ufc-gray mt-4">The camp takes place in <strong>August 2025</strong> and spans <strong>two weeks</strong>. While tickets are not included, everything else is—transportation, accommodation, food, and exclusive training activities.</p>
+        <div class="mt-8 grid md:grid-cols-3 gap-8">
+            <!-- Benefit Cards -->
+            <div class="p-6 shadow-lg rounded-lg bg-gray-900">
+                <h3 class="text-xl font-semibold text-white">World-Class Instruction</h3>
+                <p class="text-ufc-gray">Learn directly from professional fighters, Olympic-level wrestlers, and renowned coaches.</p>
+            </div>
+            <div class="p-6 shadow-lg rounded-lg bg-gray-900">
+                <h3 class="text-xl font-semibold text-white">Pro-Level Training</h3>
+                <p class="text-ufc-gray">Experience a rigorous, high-intensity program designed to push you beyond your limits.</p>
+            </div>
+            <div class="p-6 shadow-lg rounded-lg bg-gray-900">
+                <h3 class="text-xl font-semibold text-white">Exclusive Environment</h3>
+                <p class="text-ufc-gray">Network with other driven individuals who share your passion for elite performance.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What to Expect Section -->
+    <section class="py-16 px-6 bg-gray-900 text-center">
+        <h2 class="text-4xl font-bold text-ufc-red">What to Expect</h2>
+        <div class="mt-8 max-w-3xl mx-auto">
+            <ul class="text-lg text-ufc-gray space-y-4">
+                <li><strong>Expert Coaching:</strong> Train under elite-level wrestling and MMA coaches.</li>
+                <li><strong>State-of-the-Art Facilities:</strong> Access top-tier equipment and sparring areas.</li>
+                <li><strong>Customized Training Plans:</strong> Tailored strategies to enhance your strength, speed, and technique.</li>
+                <li><strong>High-Intensity Drills:</strong> Push your limits with combat conditioning sessions.</li>
+                <li><strong>Exclusive Membership:</strong> This is a selective camp, ensuring only the most dedicated individuals are accepted.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Registration Section: Includes a form for participants to apply -->
+    <section id="register" class="py-16 px-6 bg-ufc-red text-white text-center">
+        <h2 class="text-4xl font-bold">Apply for Acceptance</h2>
+        <p class="text-lg mt-4">This is an elite-level camp. Only <strong>20</strong> spots are available. Investment: <strong>$4500</strong></p>
+        <p class="text-lg mt-2 font-bold">Apply now to secure your place.</p>
+        
+        <!-- Application Form -->
+        <form class="mt-8 max-w-lg mx-auto bg-black p-6 rounded-lg shadow-lg text-white">
+            <div class="mb-4">
+                <label class="block text-ufc-gray font-bold mb-2">Full Name</label>
+                <input type="text" class="w-full p-3 border rounded-lg bg-gray-900 text-white" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-ufc-gray font-bold mb-2">Fitness Level</label>
+                <select class="w-full p-3 border rounded-lg bg-gray-900 text-white" required>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-ufc-gray font-bold mb-2">Experience Level</label>
+                <select class="w-full p-3 border rounded-lg bg-gray-900 text-white" required>
+                    <option value="none">No experience</option>
+                    <option value="amateur">Amateur competitor</option>
+                    <option value="professional">Professional fighter</option>
+                </select>
+                <label class="block text-ufc-gray font-bold mb-2">Email</label>
+                <input type="email" class="w-full p-3 border rounded-lg bg-gray-900 text-white" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-ufc-gray font-bold mb-2">Phone</label>
+                <input type="tel" class="w-full p-3 border rounded-lg bg-gray-900 text-white" placeholder="Enter your phone number" required>
+            </div>
+            <button type="submit" class="w-full p-3 bg-ufc-red hover:bg-red-700 text-white font-bold rounded-lg uppercase">Submit Application</button>
+        </form>
+    </section>
+</body>
+</html>
