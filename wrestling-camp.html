@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Wrestling Camp</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.min.css">
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .bg-accent {
+      background-color: #8A1C1C; /* wrestling accent */
+    }
+    .text-muted {
+      color: #B0B0B0;
+    }
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav Bar -->
+  <header class="w-full bg-black bg-opacity-80 py-4 px-6 flex items-center justify-between">
+    <div class="text-xl font-bold uppercase">
+      <a href="index.html">Summit Sports Camps</a>
+    </div>
+    <nav class="space-x-4">
+      <a href="wrestling-camp.html" class="hover:text-red-500 uppercase">Wrestling Camp</a>
+      <a href="skyrunning-adventure.html" class="hover:text-blue-300 uppercase">SkyRunning Adventure</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="h-screen bg-cover bg-center flex items-center justify-center text-white"
+    style="background-image: url('https://images.unsplash.com/photo-1584467735871-82e145f8a28a?auto=format&fit=crop&w=2100&q=80');"
+  >
+    <div class="bg-black/60 p-10 rounded-xl text-center">
+      <h1 class="text-5xl md:text-6xl font-bold">Elite Wrestling Camp</h1>
+      <p class="text-xl mt-4 text-muted">A two-week high-performance combat training experience in Georgia</p>
+      <a href="#apply" class="mt-6 inline-block px-8 py-4 bg-accent hover:bg-red-900 text-white font-bold rounded-lg uppercase">
+        Apply Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 px-6 bg-black text-center">
+    <h2 class="text-4xl font-bold text-accent">Overview</h2>
+    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+      The Elite Wrestling Camp is designed for serious athletes seeking to improve technical skills, build strength,
+      and learn from top-tier coaches in a high-focus environment.
+    </p>
+    <p class="text-lg text-muted mt-4">
+      Only 20 participants accepted. Runs August 2025. Price: $4500 (includes housing, meals, training, and local transport).
+    </p>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="py-16 px-6 bg-gray-900 text-center">
+    <h2 class="text-4xl font-bold text-accent mb-8">What to Expect</h2>
+    <div class="grid gap-6 max-w-4xl mx-auto text-left">
+      <div class="flex items-start">
+        <i class="ph ph-medal icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Elite Coaching:</strong> Work with Olympic and pro-level wrestling coaches and trainers
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-fire icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Combat Conditioning:</strong> Intense drills, sparring, and recovery routines
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-hiking icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Outdoor Training:</strong> Strength & mindset work in nature, including hiking and mobility
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-users-four icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Team Atmosphere:</strong> Train alongside serious athletes from around the world
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-check-square icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>All-Inclusive:</strong> Housing, meals, transportation, and training all covered
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section id="apply" class="py-16 px-6 bg-accent text-white text-center">
+    <h2 class="text-4xl font-bold">Apply to Join</h2>
+    <p class="text-lg mt-4">Only <strong>20 spots</strong> available. Investment: <strong>$4500</strong></p>
+
+    <form class="mt-8 max-w-xl mx-auto bg-black p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Full Name</label>
+        <input
+          type="text"
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Email</label>
+        <input
+          type="email"
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Wrestling Experience</label>
+        <select class="w-full p-3 border rounded-lg bg-gray-900 text-white" required>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Why do you want to join?</label>
+        <textarea
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          rows="4"
+          placeholder="Motivation, goals, background..."
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="w-full p-3 bg-red-700 hover:bg-red-900 text-white font-bold rounded-lg uppercase">
+        Submit Application
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center text-muted py-6">
+    <p>&copy; 2025 Summit Sports Camps. All rights reserved.</p>
+  </footer>
+</body>
+</html>
