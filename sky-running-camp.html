@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyRunning Adventure Camp</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
+  <!-- Phosphor Icons CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.min.css">
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    h1, h2, h3, h4 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .bg-accent {
+      background-color: #295b82; /* sky run accent */
+    }
+    .text-muted {
+      color: #B0B0B0;
+    }
+    .icon {
+      font-size: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Nav Bar -->
+  <header class="w-full bg-black bg-opacity-80 py-4 px-6 flex items-center justify-between">
+    <div class="text-xl font-bold uppercase">
+      <a href="index.html">Summit Sports Camps</a>
+    </div>
+    <nav class="space-x-4">
+      <a href="wrestling-camp.html" class="hover:text-red-500 uppercase">Wrestling Camp</a>
+      <a href="skyrunning-adventure.html" class="hover:text-blue-300 uppercase">SkyRunning Adventure</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="h-screen bg-cover bg-center flex items-center justify-center text-white"
+    style="background-image: url('https://images.pexels.com/photos/9673888/pexels-photo-9673888.jpeg');"
+  >
+    <div class="bg-black/60 p-10 rounded-xl text-center">
+      <h1 class="text-5xl md:text-6xl font-bold">SkyRunning Adventure</h1>
+      <p class="text-xl mt-4 text-muted">A high-altitude trail running camp across Georgia's majestic mountains</p>
+      <a href="#apply" class="mt-6 inline-block px-8 py-4 bg-accent hover:bg-blue-900 text-white font-bold rounded-lg uppercase">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 px-6 bg-black text-center">
+    <h2 class="text-4xl font-bold text-accent">Overview</h2>
+    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+      SkyRunning Adventure is a 5-day guided trail running experience across the Caucasus. Open to runners of all levels with strong fitness, this program blends endurance, exploration, and elevation in one unforgettable journey.
+    </p>
+    <p class="text-lg text-muted mt-4">All accommodation, meals, gear transport, and local guides included. Limited to 16 participants.</p>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="py-16 px-6 bg-gray-900 text-center">
+    <h2 class="text-4xl font-bold text-accent mb-8">What to Expect</h2>
+    <div class="grid gap-6 max-w-4xl mx-auto text-left">
+      <div class="flex items-start">
+        <i class="ph ph-mountains icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Challenging Trails:</strong> Daily 15–20km trail runs at altitudes between 2000–3500m
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-image icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Stunning Landscapes:</strong> Forests, ridgelines, alpine lakes, and hidden valleys
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-compass icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Expert Support:</strong> Professional trail guides and support vehicle access
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-heartbeat icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Holistic Program:</strong> Includes mobility, breathwork, recovery, and evening talks
+        </p>
+      </div>
+      <div class="flex items-start">
+        <i class="ph ph-users-three icon text-accent"></i>
+        <p class="text-lg text-muted">
+          <strong>Community Vibe:</strong> Connect with others who thrive on challenge and nature
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section id="apply" class="py-16 px-6 bg-accent text-white text-center">
+    <h2 class="text-4xl font-bold">Apply for the Camp</h2>
+    <p class="text-lg mt-4">Camp runs in <strong>July 2025</strong>. Cost: <strong>$1900</strong> (all-inclusive except airfare)</p>
+
+    <form class="mt-8 max-w-xl mx-auto bg-black p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Full Name</label>
+        <input
+          type="text"
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Email</label>
+        <input
+          type="email"
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Trail Running Experience</label>
+        <select class="w-full p-3 border rounded-lg bg-gray-900 text-white" required>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Tell us why you want to join</label>
+        <textarea
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          rows="4"
+          placeholder="Motivation, goals, etc."
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="w-full p-3 bg-blue-700 hover:bg-blue-900 text-white font-bold rounded-lg uppercase">
+        Submit Application
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center text-muted py-6">
+    <p>&copy; 2025 Summit Sports Camps. All rights reserved.</p>
+  </footer>
+</body>
+</html>
