@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elite Wrestling Camp</title>
+  <title>Sky-Running Camp</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
-  <!-- Phosphor Icons CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/phosphor-icons@1.4.2/src/css/icons.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
   <style>
     body {
       font-family: 'Oswald', sans-serif;
@@ -21,14 +22,18 @@
       text-transform: uppercase;
     }
     .bg-accent {
-      background-color: #8A1C1C; /* wrestling accent */
+      background-color: #295b82; /* sky-running accent */
     }
     .text-muted {
       color: #B0B0B0;
     }
+    /* Icon styling */
     .icon {
-      font-size: 1.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
       margin-right: 0.5rem;
+      fill: currentColor; /* matches text color */
+      flex-shrink: 0;
     }
   </style>
 </head>
@@ -40,19 +45,22 @@
     </div>
     <nav class="space-x-4">
       <a href="wrestling-camp.html" class="hover:text-red-500 uppercase">Wrestling Camp</a>
-      <a href="skyrunning-adventure.html" class="hover:text-blue-300 uppercase">SkyRunning Adventure</a>
+      <a href="sky-running-camp.html" class="hover:text-blue-300 uppercase">Sky-Running Camp</a>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section
     class="h-screen bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: url('https://images.unsplash.com/photo-1584467735871-82e145f8a28a?auto=format&fit=crop&w=2100&q=80');"
+    style="background-image: url('https://images.pexels.com/photos/9673888/pexels-photo-9673888.jpeg');"
   >
     <div class="bg-black/60 p-10 rounded-xl text-center">
-      <h1 class="text-5xl md:text-6xl font-bold">Elite Wrestling Camp</h1>
-      <p class="text-xl mt-4 text-muted">A two-week high-performance combat training experience in Georgia</p>
-      <a href="#apply" class="mt-6 inline-block px-8 py-4 bg-accent hover:bg-red-900 text-white font-bold rounded-lg uppercase">
+      <h1 class="text-5xl md:text-6xl font-bold">Sky-Running Camp</h1>
+      <p class="text-xl mt-4 text-muted">A high-altitude trail running camp across Georgia's majestic mountains</p>
+      <a
+        href="#apply"
+        class="mt-6 inline-block px-8 py-4 bg-accent hover:bg-blue-900 text-white font-bold rounded-lg uppercase"
+      >
         Apply Now
       </a>
     </div>
@@ -62,11 +70,11 @@
   <section class="py-16 px-6 bg-black text-center">
     <h2 class="text-4xl font-bold text-accent">Overview</h2>
     <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
-      The Elite Wrestling Camp is designed for serious athletes seeking to improve technical skills, build strength,
-      and learn from top-tier coaches in a high-focus environment.
+      Our Sky-Running Camp is a 5-day guided trail running experience across the Caucasus. Open to runners of all levels
+      with strong fitness, this program blends endurance, exploration, and elevation in one unforgettable journey.
     </p>
     <p class="text-lg text-muted mt-4">
-      Only 20 participants accepted. Runs August 2025. Price: $4500 (includes housing, meals, training, and local transport).
+      All accommodation, meals, gear transport, and local guides included. Limited to 16 participants.
     </p>
   </section>
 
@@ -74,34 +82,49 @@
   <section class="py-16 px-6 bg-gray-900 text-center">
     <h2 class="text-4xl font-bold text-accent mb-8">What to Expect</h2>
     <div class="grid gap-6 max-w-4xl mx-auto text-left">
+      <!-- 1) Mountains Icon -->
       <div class="flex items-start">
-        <i class="ph ph-medal icon text-accent"></i>
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M64 192L128 64l64 128H64z" />
+        </svg>
         <p class="text-lg text-muted">
-          <strong>Elite Coaching:</strong> Work with Olympic and pro-level wrestling coaches and trainers
+          <strong>Challenging Trails:</strong> Daily 15–20km runs at altitudes between 2000–3500m
         </p>
       </div>
+      <!-- 2) Image Icon -->
       <div class="flex items-start">
-        <i class="ph ph-fire icon text-accent"></i>
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 56v144h192V56H32zm176 16v72L160 96l-48 64-32-32-24 40V72h152z"/>
+        </svg>
         <p class="text-lg text-muted">
-          <strong>Combat Conditioning:</strong> Intense drills, sparring, and recovery routines
+          <strong>Stunning Landscapes:</strong> Forests, ridgelines, alpine lakes, and hidden valleys
         </p>
       </div>
+      <!-- 3) Compass Icon -->
       <div class="flex items-start">
-        <i class="ph ph-hiking icon text-accent"></i>
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M128 32a96 96 0 1096 96 96.11 96.11 0 00-96-96zm8 88a8 8 0 01-8 8h-16a8 8 0 010-16h8v-8a8 8 0 0116 0z"/>
+        </svg>
         <p class="text-lg text-muted">
-          <strong>Outdoor Training:</strong> Strength & mindset work in nature, including hiking and mobility
+          <strong>Expert Support:</strong> Professional trail guides and support vehicle access
         </p>
       </div>
+      <!-- 4) Heartbeat Icon -->
       <div class="flex items-start">
-        <i class="ph ph-users-four icon text-accent"></i>
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M128 40C78.76 40 40 78.76 40 128s38.76 88 88 88 88-38.76 88-88S177.24 40 128 40zm22.09 93.08a8 8 0 01-7.23 4.92 8.09 8.09 0 01-3.09-.63l-17.58-7.1-11.8 29.6a8 8 0 01-14.86.84l-14.28-24-11.91 14.29a8 8 0 01-12.42-10.18l16-19.2a8 8 0 0113.54 1.08l13.64 22.94 12.65-31.7a8 8 0 0110.3-4.66l22.78 9.2a8 8 0 014.67 10.3z"/>
+        </svg>
         <p class="text-lg text-muted">
-          <strong>Team Atmosphere:</strong> Train alongside serious athletes from around the world
+          <strong>Holistic Program:</strong> Includes mobility, breathwork, recovery, and evening talks
         </p>
       </div>
+      <!-- 5) Users Icon -->
       <div class="flex items-start">
-        <i class="ph ph-check-square icon text-accent"></i>
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M88 104a40 40 0 1180 0 40 40 0 01-80 0zm136 80H32a8 8 0 000 16h192a8 8 0 000-16z"/>
+        </svg>
         <p class="text-lg text-muted">
-          <strong>All-Inclusive:</strong> Housing, meals, transportation, and training all covered
+          <strong>Community Vibe:</strong> Connect with others who thrive on challenge and nature
         </p>
       </div>
     </div>
@@ -109,8 +132,10 @@
 
   <!-- Application Form -->
   <section id="apply" class="py-16 px-6 bg-accent text-white text-center">
-    <h2 class="text-4xl font-bold">Apply to Join</h2>
-    <p class="text-lg mt-4">Only <strong>20 spots</strong> available. Investment: <strong>$4500</strong></p>
+    <h2 class="text-4xl font-bold">Apply for the Camp</h2>
+    <p class="text-lg mt-4">
+      Camp runs in <strong>July 2025</strong>. Cost: <strong>$1900</strong> (all-inclusive except airfare)
+    </p>
 
     <form class="mt-8 max-w-xl mx-auto bg-black p-6 rounded-lg shadow-lg">
       <div class="mb-4">
@@ -132,7 +157,7 @@
         />
       </div>
       <div class="mb-4">
-        <label class="block text-muted font-bold mb-2">Wrestling Experience</label>
+        <label class="block text-muted font-bold mb-2">Trail Running Experience</label>
         <select class="w-full p-3 border rounded-lg bg-gray-900 text-white" required>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
@@ -140,15 +165,18 @@
         </select>
       </div>
       <div class="mb-4">
-        <label class="block text-muted font-bold mb-2">Why do you want to join?</label>
+        <label class="block text-muted font-bold mb-2">Tell us why you want to join</label>
         <textarea
           class="w-full p-3 border rounded-lg bg-gray-900 text-white"
           rows="4"
-          placeholder="Motivation, goals, background..."
+          placeholder="Motivation, goals, etc."
           required
         ></textarea>
       </div>
-      <button type="submit" class="w-full p-3 bg-red-700 hover:bg-red-900 text-white font-bold rounded-lg uppercase">
+      <button
+        type="submit"
+        class="w-full p-3 bg-blue-700 hover:bg-blue-900 text-white font-bold rounded-lg uppercase"
+      >
         Submit Application
       </button>
     </form>
