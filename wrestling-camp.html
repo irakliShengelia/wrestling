@@ -35,6 +35,18 @@
       fill: currentColor;
       flex-shrink: 0;
     }
+    .bg-ufc-red {
+      background-color: #D22F27;
+    }
+    .bg-ufc-blue {
+      background-color: #295b82;
+    }
+    .text-muted {
+      color: #B0B0B0;
+    }
+    .text-ufc-red {
+      color: #D22F27;
+    }
   </style>
 </head>
 <body>
@@ -43,12 +55,25 @@
     <div class="text-xl font-bold uppercase">
       <a href="index.html">Summit Sports Camps</a>
     </div>
-    <nav class="space-x-4">
-      <a href="wrestling-camp.html" class="text-white uppercase border-b-2 border-white">Wrestling Camp</a>
-      <a href="sky-running-camp.html" class="hover:text-ufc-blue uppercase">Sky-Running Camp</a>
-      <a href="about-us.html" class="hover:text-ufc-blue uppercase">About Us</a>
+    <button id="menu-button" class="block md:hidden text-white text-2xl">
+      &#9776;
+    </button>
+    <nav id="menu" class="fixed top-0 left-0 h-full w-full bg-black bg-opacity-90 transform -translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-6 md:static md:flex-row md:space-x-4 md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:space-y-0">
+      <a href="wrestling-camp.html" class="block text-2xl hover:text-ufc-blue uppercase text-ufc-red">Wrestling Camp</a>
+      <a href="sky-running-camp.html" class="block text-2xl hover:text-ufc-blue uppercase">Sky-Running Camp</a>
+      <a href="about-us.html" class="block text-2xl hover:text-ufc-blue uppercase">About Us</a>
     </nav>
   </header>
+
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const menu = document.getElementById('menu');
+
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('-translate-x-full');
+    });
+  </script>
+
 
   <!-- Hero Section -->
   <section

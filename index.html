@@ -22,10 +22,10 @@
       text-transform: uppercase;
     }
     .bg-ufc-red {
-      background-color: #D22F27; /* accent for wrestling */
+      background-color: #D22F27;
     }
     .bg-ufc-blue {
-      background-color: #295b82; /* accent for sky-running */
+      background-color: #295b82;
     }
     .text-muted {
       color: #B0B0B0;
@@ -38,14 +38,26 @@
     <div class="text-xl font-bold uppercase">
       <a href="index.html">Summit Sports Camps</a>
     </div>
-    <nav class="space-x-4">
-      <a href="wrestling-camp.html" class="hover:text-ufc-blue uppercase">Wrestling Camp</a>
-      <a href="sky-running-camp.html" class="hover:text-ufc-blue uppercase">Sky-Running Camp</a>
-      <a href="about-us.html" class="hover:text-ufc-blue uppercase">About Us</a>
+    <button id="menu-button" class="block md:hidden text-white text-2xl">
+      &#9776;
+    </button>
+    <nav id="menu" class="fixed top-0 left-0 h-full w-full bg-black bg-opacity-90 transform -translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-6 md:static md:flex-row md:space-x-4 md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:space-y-0">
+      <a href="wrestling-camp.html" class="block text-2xl hover:text-ufc-blue uppercase">Wrestling Camp</a>
+      <a href="sky-running-camp.html" class="block text-2xl hover:text-ufc-blue uppercase">Sky-Running Camp</a>
+      <a href="about-us.html" class="block text-2xl hover:text-ufc-blue uppercase">About Us</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const menu = document.getElementById('menu');
+
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('-translate-x-full');
+    });
+  </script>
+
+
   <section
     class="bg-cover bg-center h-screen flex items-center justify-center text-white"
     style="background-image: url('https://images.unsplash.com/photo-1705679547979-93e9f12ce5d7?q=80&w=3564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
@@ -66,56 +78,6 @@
         >
           Sky-Running Camp
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Overview Section -->
-  <section class="py-16 px-6 bg-black text-center">
-    <h2 class="text-4xl font-bold text-ufc-red">Choose Your Challenge</h2>
-    <p class="text-lg text-muted mt-4 max-w-2xl mx-auto">
-      Whether you're ready to grind on the mat or race the sky trails, our camps are curated to push your limits and build elite skills.
-    </p>
-    <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-      <!-- Wrestling Camp Card -->
-      <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
-        <img
-          src="https://media.istockphoto.com/id/1500640160/photo/senior-wrestlers-demonstrating-techniques-for-children.jpg?s=1024x1024&w=is&k=20&c=TLt19TzK70XNvtQdTEbMH9uT75d9_s0XASLaLycdSkU="
-          alt="Wrestling Camp"
-          class="w-full h-64 object-cover"
-        />
-        <div class="p-6">
-          <h3 class="text-2xl font-bold mb-2">Elite Wrestling Camp</h3>
-          <p class="text-muted mb-4">
-            Train with top-tier coaches and Olympians. Only 20 spots available for our August 2025 program.
-          </p>
-          <a
-            href="wrestling-camp.html"
-            class="inline-block mt-2 px-6 py-3 bg-ufc-red hover:bg-red-700 text-white font-bold rounded-lg uppercase"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
-      <!-- Sky-Running Camp Card -->
-      <div class="bg-gray-900 rounded-lg shadow-lg overflow-hidden">
-        <img
-          src="https://images.pexels.com/photos/9673888/pexels-photo-9673888.jpeg"
-          alt="Sky-Running Camp"
-          class="w-full h-64 object-cover"
-        />
-        <div class="p-6">
-          <h3 class="text-2xl font-bold mb-2">Sky-Running Camp</h3>
-          <p class="text-muted mb-4">
-            Conquer the peaks and trails of the Caucasus. A 5-day extreme endurance event for the bold.
-          </p>
-          <a
-            href="sky-running-camp.html"
-            class="inline-block mt-2 px-6 py-3 bg-ufc-blue hover:bg-blue-900 text-white font-bold rounded-lg uppercase"
-          >
-            Explore Camp
-          </a>
-        </div>
       </div>
     </div>
   </section>
