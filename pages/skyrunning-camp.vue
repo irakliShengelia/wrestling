@@ -1,0 +1,134 @@
+<template>
+    <!-- Hero Section -->
+  <section
+    class="h-screen bg-cover bg-center flex items-center justify-center text-white"
+    style="background-image: url('https://images.pexels.com/photos/9673888/pexels-photo-9673888.jpeg');"
+  >
+    <div class="bg-black/60 p-10 rounded-xl text-center">
+      <h1 class="text-5xl md:text-6xl font-bold">Sky-Running Camp</h1>
+      <p class="text-xl mt-4 text-muted">A high-altitude trail running camp across Georgia's majestic mountains</p>
+      <a
+        href="#apply"
+        class="mt-6 inline-block px-8 py-4 bg-accent hover:bg-blue-900 text-white font-bold rounded-lg uppercase"
+      >
+        Apply Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-16 px-6 bg-black text-center">
+    <h2 class="text-4xl font-bold text-accent">Overview</h2>
+    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+      Our Sky-Running Camp is a 5-day guided trail running experience across the Caucasus. Open to runners of all levels
+      with strong fitness, this program blends endurance, exploration, and elevation in one unforgettable journey.
+    </p>
+    <p class="text-lg text-muted mt-4">
+      All accommodation, meals, gear transport, and local guides included. Limited to 16 participants.
+    </p>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="py-16 px-6 bg-gray-900 text-center">
+    <h2 class="text-4xl font-bold text-accent mb-8">What to Expect</h2>
+    <div class="grid gap-6 max-w-4xl mx-auto text-left">
+      <!-- 1) Mountains Icon -->
+      <div class="flex items-start">
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M64 192L128 64l64 128H64z" />
+        </svg>
+        <p class="text-lg text-muted">
+          <strong>Challenging Trails:</strong> Daily 15–20km runs at altitudes between 2000–3500m
+        </p>
+      </div>
+      <!-- 2) Image Icon -->
+      <div class="flex items-start">
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 56v144h192V56H32zm176 16v72L160 96l-48 64-32-32-24 40V72h152z"/>
+        </svg>
+        <p class="text-lg text-muted">
+          <strong>Stunning Landscapes:</strong> Forests, ridgelines, alpine lakes, and hidden valleys
+        </p>
+      </div>
+      <!-- 3) Compass Icon -->
+      <div class="flex items-start">
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M128 32a96 96 0 1096 96 96.11 96.11 0 00-96-96zm8 88a8 8 0 01-8 8h-16a8 8 0 010-16h8v-8a8 8 0 0116 0z"/>
+        </svg>
+        <p class="text-lg text-muted">
+          <strong>Expert Support:</strong> Professional trail guides and support vehicle access
+        </p>
+      </div>
+      <!-- 4) Heartbeat Icon -->
+      <div class="flex items-start">
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M128 40C78.76 40 40 78.76 40 128s38.76 88 88 88 88-38.76 88-88S177.24 40 128 40zm22.09 93.08a8 8 0 01-7.23 4.92 8.09 8.09 0 01-3.09-.63l-17.58-7.1-11.8 29.6a8 8 0 01-14.86.84l-14.28-24-11.91 14.29a8 8 0 01-12.42-10.18l16-19.2a8 8 0 0113.54 1.08l13.64 22.94 12.65-31.7a8 8 0 0110.3-4.66l22.78 9.2a8 8 0 014.67 10.3z"/>
+        </svg>
+        <p class="text-lg text-muted">
+          <strong>Holistic Program:</strong> Includes mobility, breathwork, recovery, and evening talks
+        </p>
+      </div>
+      <!-- 5) Users Icon -->
+      <div class="flex items-start">
+        <svg class="icon text-accent" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+          <path d="M88 104a40 40 0 1180 0 40 40 0 01-80 0zm136 80H32a8 8 0 000 16h192a8 8 0 000-16z"/>
+        </svg>
+        <p class="text-lg text-muted">
+          <strong>Community Vibe:</strong> Connect with others who thrive on challenge and nature
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section id="apply" class="py-16 px-6 bg-accent text-white text-center">
+    <h2 class="text-4xl font-bold">Apply for the Camp</h2>
+    <p class="text-lg mt-4">
+      Camp runs in <strong>July 2025</strong>. Cost: <strong>$1900</strong> (all-inclusive except airfare)
+    </p>
+
+    <form class="mt-8 max-w-xl mx-auto bg-black p-6 rounded-lg shadow-lg">
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Full Name</label>
+        <input
+          type="text"
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Email</label>
+        <input
+          type="email"
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Trail Running Experience</label>
+        <select class="w-full p-3 border rounded-lg bg-gray-900 text-white" required>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <label class="block text-muted font-bold mb-2">Tell us why you want to join</label>
+        <textarea
+          class="w-full p-3 border rounded-lg bg-gray-900 text-white"
+          rows="4"
+          placeholder="Motivation, goals, etc."
+          required
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="w-full p-3 bg-blue-700 hover:bg-blue-900 text-white font-bold rounded-lg uppercase"
+      >
+        Submit Application
+      </button>
+    </form>
+  </section>
+</template>
