@@ -33,7 +33,7 @@
   </section>
 
   <!-- Overview Section with User-Specified Content -->
-  <section class="py-12 px-4 bg-gray-50 text-center text-gray-800">
+  <section class="py-12 px-4 bg-gray-50 text-center text-gray-800s">
     <h2 class="text-4xl font-bold text-blue-600">Kazbegi Skyrunning Camp Overview</h2>
     <p class="text-lg mt-4 max-w-3xl mx-auto text-gray-700">
       Welcome to Kazbegi, a hidden gem nestled in the Greater Caucasus. Picture rugged alpine ridges, sweeping valleys, glaciers, and remote trails winding through centuries-old villages. This 7-day skyrunning camp offers an epic blend of endurance, adventure, and exploration.
@@ -106,5 +106,51 @@
       After a hearty breakfast, we pack up and transfer back to Tbilisi. We'll stop at <strong>Ananuri Fortress</strong> or <strong>Zhinvali Reservoir</strong> on the way for photos and snacks.
     </p>
     <p class="text-lg mt-2 max-w-3xl mx-auto">This marks the end of an unforgettable week in the Caucasus.</p>
+  </section>
+  <!-- Application Form Section -->
+  <section id="apply" class="py-16 px-4 bg-gray-50 text-gray-900">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-blue-600">Apply to Join the Camp</h2>
+      <form class="space-y-6 bg-white p-6 rounded-lg shadow-md">
+        <div>
+          <label class="block text-sm font-semibold mb-1">Full Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded-md p-3" placeholder="Your name" required />
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-1">Email</label>
+          <input type="email" class="w-full border border-gray-300 rounded-md p-3" placeholder="you@example.com" required />
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-1">Phone Number</label>
+          <input type="tel" class="w-full border border-gray-300 rounded-md p-3" placeholder="Optional" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-1">Instagram @</label>
+          <input type="tel" class="w-full border border-gray-300 rounded-md p-3" placeholder="Optional" />
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-1">Trail Running Experience</label>
+          <select class="w-full border border-gray-300 rounded-md p-3" required>
+            <option value="">Select experience level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-1">Why do you want to join?</label>
+          <textarea class="w-full border border-gray-300 rounded-md p-3" rows="4" placeholder="Tell us about your goals and motivation..." required></textarea>
+        </div>
+
+        <div class="text-right">
+          <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-sm font-semibold uppercase">Submit Application</button>
+        </div>
+      </form>
+    </div>
   </section>
 </template>
