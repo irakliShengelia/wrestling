@@ -8,13 +8,13 @@
       <p class="text-xl mt-4 text-muted">Elite outdoor and combat training experiences for athletes of all levels.</p>
       <div class="mt-6 flex flex-col md:flex-row gap-4 justify-center">
         <a
-          href="wrestling-camp.html"
+          href="wrestling-camp"
           class="px-8 py-4 bg-ufc-red hover:bg-red-700 text-white font-bold rounded-lg uppercase"
         >
           Wrestling Camp
         </a>
         <a
-          href="sky-running-camp.html"
+          href="skyrunning-camp"
           class="px-8 py-4 bg-ufc-blue hover:bg-blue-900 text-white font-bold rounded-lg uppercase"
         >
           Sky-Running Camp

@@ -41,15 +41,6 @@
 import { useHead } from 'nuxt/app';
 import { ref, onMounted } from 'vue';
 
-useHead({
-  script: [
-    {
-      src: 'https://cdn.tailwindcss.com',
-      async: true,
-    },
-  ],
-});
-
 // You can add any necessary script logic here
 const menuButton = ref(null);
 const menu = ref(null);
