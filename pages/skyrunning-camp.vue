@@ -2,10 +2,10 @@
     <!-- Hero Section -->
     <section
     class="h-screen bg-cover bg-center flex items-center justify-center text-white"
-    style="background-image: url('https://images.pexels.com/photos/9673888/pexels-photo-9673888.jpeg');"
+    style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
   >
     <div class="bg-black/60 p-10 rounded-xl text-center">
-      <h1 class="text-5xl md:text-6xl font-bold">Sky-Running Camp</h1>
+      <h1 class="text-5xl md:text-6xl font-bold">Sky-Running Camp with Pascal Egli</h1>
       <p class="text-xl mt-4 text-muted">A high-altitude trail running camp across Georgia's majestic mountains</p>
       <a
         href="#apply"
