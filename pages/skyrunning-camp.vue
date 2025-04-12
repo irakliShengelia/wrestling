@@ -53,7 +53,7 @@
       </p>
       <h3 class="text-2xl font-semibold text-black mt-6">Why Travel With Us</h3>
       <p class="text-lg text-gray-800 mt-4">
-        We are a small, family-run team who specialize in crafting unique running experiences that balance raw wilderness with comfort. Every detail is handled with care to ensure a meaningful and memorable journey — because this is your dream, your effort, and your time.
+        We are a small team who specialize in crafting unique running experiences that balance raw wilderness with comfort. Every detail is handled with care to ensure a meaningful and memorable journey — because this is your dream, your effort, and your time.
       </p>
       <h3 class="text-2xl font-semibold text-black mt-6">Who Is This For?</h3>
       <p class="text-lg text-gray-800 mt-4">
@@ -63,6 +63,17 @@
       <p class="text-lg text-gray-800 mt-4">
         This is a high-effort trip with daily outings of 6–8 hours and elevation gains of up to 1500m. You should be in excellent hiking/running condition and capable of mountain terrain. Not sure? Let's chat.
       </p>
+      <h3 class="text-2xl font-semibold text-black mt-6">What's Included</h3>
+      <ul class="text-lg text-gray-800 mt-4 list-disc list-inside pl-5">
+        <li>All meals during the camp</li>
+        <li>Guided trail runs with experienced instructors</li>
+        <li>Transportation from Tbilisi to Kazbegi and back</li>
+        <li>Daily snacks and hydration support</li>
+        <li>All necessary permits and fees</li>
+        <li>Group gear (e.g., first aid kit, safety equipment)</li>
+        <li>Post-camp support and follow-up</li>
+      </ul>
+      <p class="text-lg text-gray-800 mt-4"><strong>Note:</strong> Airfare and hotels in Tbilisi are not included.</p>
     </div>
   </section>
 
