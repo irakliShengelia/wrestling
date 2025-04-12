@@ -1,44 +1,42 @@
 <template>
-    <!-- Hero Section -->
-    <section
-    class="h-screen bg-cover bg-center flex items-center justify-center text-white"
+  <section
+    class="h-screen bg-cover bg-center flex items-center justify-center text-black"
     style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
   >
-    <div class="bg-black/60 p-10 rounded-xl text-center">
+    <div class="bg-white/80 p-10 rounded-xl text-center shadow-lg">
       <h1 class="text-5xl md:text-6xl font-bold">Sky-Running Camp with Pascal Egli</h1>
-      <p class="text-xl mt-4 text-muted">A high-altitude trail running camp across Georgia's majestic mountains</p>
-      <a
-        href="#apply"
-        class="mt-6 inline-block px-8 py-4 bg-accent hover:bg-blue-900 text-white font-bold rounded-lg uppercase"
-      >
-        Apply Now
-      </a>
-      <a
-        href="#booking"
-        class="mt-4 inline-block px-8 py-4 bg-blue-600 hover:bg-blue-800 text-white font-bold rounded-lg uppercase"
-      >
-        Read More
-      </a>
+      <p class="text-xl mt-4 text-gray-800">A high-altitude trail running camp across Georgia's majestic mountains</p>
+      <div class="mt-6 flex flex-col md:flex-row gap-4">
+        <a
+          href="#apply"
+          class="inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg uppercase"
+        >
+          Apply Now
+        </a>
+        <a
+          href="#booking"
+          class="inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg uppercase"
+        >
+          Read More
+        </a>
+      </div>
     </div>
   </section>
   
-  <section class="py-16 px-6 bg-black text-center">
-    <h1 class="text-5xl font-bold text-white">Kazbegi Skyrunning Camp</h1>
-    <h2 class="text-3xl font-semibold text-accent mt-2">COMFORT VERSION</h2>
-    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+  <section class="py-16 px-6 bg-white text-center">
+    <h1 class="text-5xl font-bold text-black">Kazbegi Skyrunning Camp</h1>
+    <h2 class="text-3xl font-semibold text-blue-600 mt-2">COMFORT VERSION</h2>
+    <p class="text-lg text-gray-700 mt-4 max-w-3xl mx-auto">
       An extraordinary week of high-altitude running in the Caucasus mountains of Georgia — a skyrunner's dream through untamed trails, ancient culture, and breathtaking views.
     </p>
 
-    <h3 class="text-2xl font-semibold text-white mt-6">2025 Dates</h3>
+    <h3 class="text-2xl font-semibold text-black mt-6">2025 Dates</h3>
     <div class="dates mt-2">
       <p class="text-lg"><strong>Sept 25 - Oct 2, 2025</strong> (6 spots left)</p>
     </div>
 
-    <p class="text-lg font-bold text-white mt-4"><strong>Price:</strong> 2850 EUR</p>
-    <p class="text-lg text-muted">(All-Inclusive, details below)</p>
-    <p class="text-lg text-muted">A 25% deposit is due to secure your reservation. Remaining balance due 60 days before the start of the camp.</p>
-
-    <a href="#booking" class="mt-6 inline-block px-8 py-4 bg-accent hover:bg-blue-900 text-white font-bold rounded-lg uppercase">Request to Book</a>
+    <p class="text-lg font-bold text-black mt-4"><strong>Price:</strong> 2850 EUR</p>
+    <p class="text-lg text-gray-700">(All-Inclusive, details below)</p>
   </section>
 
   <!-- Camp Overview Section -->
