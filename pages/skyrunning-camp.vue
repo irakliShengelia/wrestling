@@ -23,9 +23,9 @@
         </a>
       </div>
     </div>
-    <a href="#summary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#summary')">
+    <a href="#summary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" @click.prevent="smoothScroll('#summary')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
     </a>
   </section>
@@ -46,17 +46,17 @@
       <p class="text-lg font-bold text-black mt-4"><strong>Price:</strong> <span class="line-through">2700 USD</span> <span class="text-red-600">2495 USD</span> (Earlybird)</p>
       <p class="text-lg text-gray-700">(All-Inclusive, details below)</p>
     </div>
-    <a href="#camp-overview" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#camp-overview')">
+    <a href="#camp-overview" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" @click.prevent="smoothScroll('#camp-overview')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
     </a>
   </section>
 
   <!-- Camp Overview Section -->
-  <section id="camp-overview" class="py-16 px-6 bg-gray-100 text-left relative">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-blue-600">Kazbegi Skyrunning Camp Overview</h2>
+  <section id="camp-overview" class="py-16 px-6 relative bg-cover" style="background-image: url('https://shared-img.digitize.ge/overview-bg.jpg');">
+    <div class="bg-white bg-opacity-90 p-10 rounded-xl max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold text-blue-600">Camp Overview</h2>
       <p class="text-lg text-gray-800 mt-4">
         Welcome to Kazbegi, a hidden gem nestled in the Greater Caucasus. Picture rugged alpine ridges, sweeping valleys, glaciers, and remote trails winding through centuries-old villages. This 7-day skyrunning camp offers an epic blend of endurance, adventure, and exploration.
       </p>
@@ -87,9 +87,9 @@
       </ul>
       <p class="text-lg text-gray-800 mt-4"><strong>Note:</strong> Airfare and hotels in Tbilisi are not included.</p>
     </div>
-    <a href="#daily-itinerary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#daily-itinerary')">
+    <a href="#daily-itinerary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" @click.prevent="smoothScroll('#daily-itinerary')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
     </a>
   </section>
@@ -97,7 +97,7 @@
   <!-- Daily Itinerary Section -->
   <section id="daily-itinerary" class="py-16 px-6 bg-white text-left shadow-lg relative">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-blue-600 mb-6 border-b-2 border-blue-600 pb-2">Daily Itinerary</h2>
+      <h2 class="text-4xl font-bold text-blue-600 mb-6">Daily Itinerary</h2>
       
       <div class="mt-8">
         <h3 class="text-3xl font-semibold text-black mb-2">Day 1 | Kazbegi Arrival & Acclimatization</h3>
@@ -107,7 +107,7 @@
           <li>Gentle acclimatization hike to <strong>Gergeti Trinity Church</strong> (2170 m) for stunning views.</li>
           <li>Evening safety briefing and overview of the week ahead.</li>
         </ul>
-        <p class="text-gray-800 mt-4"><strong>Accommodation:</strong> Rooms Hotel Kazbegi or local guesthouse (twin/double occupancy).</p>
+        <p class="text-gray-800 mt-4"><strong>Accommodation:</strong>3* Hotel Kazbegi or local guesthouse (twin/double occupancy).</p>
       </div>
 
       <div class="mt-8">
@@ -190,9 +190,9 @@
         <p class="text-gray-800 mt-4">This marks the end of an unforgettable week in the Caucasus.</p>
       </div>
     </div>
-    <a href="#cancellation-policy" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#cancellation-policy')">
+    <a href="#cancellation-policy" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" @click.prevent="smoothScroll('#cancellation-policy')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
     </a>
   </section>
@@ -207,15 +207,18 @@
         <li>Less than 60 days before trip: no refund</li>
       </ul>
     </div>
-    <a href="#booking" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#booking')">
+    <a href="#booking" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce  " @click.prevent="smoothScroll('#booking')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
     </a>
   </section>
 
   <!-- Request to Book Section -->
-  <section id="booking" class="py-16 px-6 bg-blue-600 text-white text-left w-full relative">
+  <section
+    id="booking" class="py-16 px-6 bg-blue-600 text-white text-left w-full relative bg-cover md:bg-center"
+    style="background-image: url('https://shared-img.digitize.ge/book-bg.jpg');"
+  >
     <div class="max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold text-center">Request to Book</h2>
       <form class="mt-8 max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">

@@ -6,7 +6,7 @@
       <title>Caucasus Collective</title>
       <!-- Google Font -->
       <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Montserrat:wght@400;500&display=swap"
         rel="stylesheet"
       />
     </Head>
@@ -70,13 +70,14 @@ const closeMenu = () => {
 
 <style>
 body {
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background-color: #111;
       color: #fff;
     }
     h1, h2, h3, h4 {
       font-weight: 700;
       text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
     }
     .bg-ufc-red {
       background-color: #D22F27; /* accent for wrestling */
