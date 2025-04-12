@@ -4,7 +4,7 @@
     style="background-image: url('https://images.unsplash.com/photo-1705679547979-93e9f12ce5d7?q=80&w=3564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
   >
     <div class="bg-black/70 p-10 rounded-xl text-center">
-      <h1 class="text-5xl md:text-6xl font-bold">Summit Sports Camps</h1>
+      <h1 class="text-5xl md:text-6xl font-bold">Caucasus Collective</h1>
       <p class="text-xl mt-4 text-muted">Elite outdoor and combat training experiences for athletes of all levels.</p>
       <div class="mt-6 flex flex-col md:flex-row gap-4 justify-center">
         <a

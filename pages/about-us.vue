@@ -6,7 +6,7 @@
   >
     <div class="bg-black/70 p-10 rounded-xl text-center">
       <h1 class="text-5xl md:text-6xl font-bold">Our Story</h1>
-      <p class="text-xl mt-4 text-muted">The vision, people, and passion behind Summit Sports Camps</p>
+      <p class="text-xl mt-4 text-muted">The vision, people, and passion behind Caucasus Collective</p>
     </div>
   </section>
 
@@ -17,7 +17,7 @@
         <h2 class="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-ufc-red to-ufc-blue">Our Mission</h2>
         <div class="w-24 h-1 bg-gradient-to-r from-ufc-red to-ufc-blue mx-auto mb-10"></div>
         <p class="text-lg text-muted max-w-3xl mx-auto leading-relaxed">
-          Founded in 2023 in the heart of Georgia's Caucasus region, Summit Sports Camps was born from the combined expertise of three visionaries with a shared passion. Jarji brought his elite combat sports experience, Dachi contributed his mastery of high-altitude endurance training, and Irakli leveraged his extensive travel industry knowledge to create something truly unique.
+          Founded in 2023 in the heart of Georgia's Caucasus region, Caucasus Collective was born from the combined expertise of three visionaries with a shared passion. Jarji brought his elite combat sports experience, Dachi contributed his mastery of high-altitude endurance training, and Irakli leveraged his extensive travel industry knowledge to create something truly unique.
         </p>
         <p class="text-lg text-muted max-w-3xl mx-auto mt-6 leading-relaxed">
           This powerful fusion of sports excellence and adventure tourism expertise allowed us to create training experiences that harness Georgia's spectacular landscapes and rich wrestling tradition. We combine the raw power of combat sports with the unforgiving challenges of high-altitude endurance training to forge mental and physical resilience like no other program.

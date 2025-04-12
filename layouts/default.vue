@@ -3,7 +3,7 @@
     <Head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Summit Sports Camps</title>
+      <title>Caucasus Collective</title>
       <!-- Google Font -->
       <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap"
@@ -14,7 +14,7 @@
       <!-- Nav Bar -->
       <header class="w-full bg-black bg-opacity-80 py-4 px-6 flex items-center justify-between">
         <div class="text-xl font-bold uppercase">
-          <NuxtLink to="/" exact-active-class="text-ufc-red">Summit Sports Camps</NuxtLink>
+          <NuxtLink to="/" exact-active-class="text-ufc-red">Caucasus Collective</NuxtLink>
         </div>
         <button id="menu-button" class="block md:hidden text-white text-2xl">
           &#9776;
@@ -30,7 +30,7 @@
       
       <!-- Footer -->
       <footer class="bg-gray-900 text-center text-muted py-6">
-        <p>&copy; 2025 Summit Sports Camps. All rights reserved.</p>
+        <p>&copy; 2025 Caucasus Collective. All rights reserved.</p>
       </footer>
     </div>
   </div>
