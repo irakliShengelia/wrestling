@@ -10,18 +10,20 @@
         <a
           href="#booking"
           class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg uppercase"
+          @click.prevent="smoothScroll('#booking')"
         >
           Apply Now
         </a>
         <a
           href="#summary"
           class="inline-block px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg uppercase"
+          @click.prevent="smoothScroll('#summary')"
         >
           Read More
         </a>
       </div>
     </div>
-    <a href="#summary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+    <a href="#summary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#summary')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
@@ -44,7 +46,7 @@
       <p class="text-lg font-bold text-black mt-4"><strong>Price:</strong> <span class="line-through">2700 USD</span> <span class="text-red-600">2495 USD</span> (Earlybird)</p>
       <p class="text-lg text-gray-700">(All-Inclusive, details below)</p>
     </div>
-    <a href="#camp-overview" class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+    <a href="#camp-overview" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#camp-overview')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
@@ -85,7 +87,7 @@
       </ul>
       <p class="text-lg text-gray-800 mt-4"><strong>Note:</strong> Airfare and hotels in Tbilisi are not included.</p>
     </div>
-    <a href="#daily-itinerary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+    <a href="#daily-itinerary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#daily-itinerary')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
@@ -188,7 +190,7 @@
         <p class="text-gray-800 mt-4">This marks the end of an unforgettable week in the Caucasus.</p>
       </div>
     </div>
-    <a href="#cancellation-policy" class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+    <a href="#cancellation-policy" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#cancellation-policy')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
@@ -205,7 +207,7 @@
         <li>Less than 60 days before trip: no refund</li>
       </ul>
     </div>
-    <a href="#booking" class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+    <a href="#booking" class="absolute bottom-4 left-1/2 transform -translate-x-1/2" @click.prevent="smoothScroll('#booking')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
@@ -242,3 +244,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    smoothScroll(target) {
+      const element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+}
+</script>
