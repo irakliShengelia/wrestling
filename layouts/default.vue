@@ -10,7 +10,7 @@
         rel="stylesheet"
       />
     </Head>
-    <body>
+    <div>
       <!-- Nav Bar -->
       <header class="w-full bg-black bg-opacity-80 py-4 px-6 flex items-center justify-between">
         <div class="text-xl font-bold uppercase">
@@ -32,7 +32,7 @@
       <footer class="bg-gray-900 text-center text-muted py-6">
         <p>&copy; 2025 Summit Sports Camps. All rights reserved.</p>
       </footer>
-    </body>
+    </div>
   </div>
 </template>
 
