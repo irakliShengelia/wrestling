@@ -221,18 +221,20 @@
   >
     <div class="max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold text-center">Request to Book</h2>
-      <form class="mt-8 max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+      <form @submit.prevent="handleSubmit" class="mt-8 max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
         <div class="mb-4">
           <label class="block text-gray-800 font-bold mb-2">Full Name</label>
-          <input type="text" class="w-full p-3 border rounded-lg bg-gray-200 text-black" placeholder="Enter your name" required />
+          <input v-model="form.name" type="text" class="w-full p-3 border rounded-lg bg-gray-200 text-black" placeholder="Enter your name" required />
+          <p v-if="errors.name" class="text-red-500 text-sm">{{ errors.name }}</p>
         </div>
         <div class="mb-4">
           <label class="block text-gray-800 font-bold mb-2">Email</label>
-          <input type="email" class="w-full p-3 border rounded-lg bg-gray-200 text-black" placeholder="Enter your email" required />
+          <input v-model="form.email" type="email" class="w-full p-3 border rounded-lg bg-gray-200 text-black" placeholder="Enter your email" required />
+          <p v-if="errors.email" class="text-red-500 text-sm">{{ errors.email }}</p>
         </div>
         <div class="mb-4">
           <label class="block text-gray-800 font-bold mb-2">Trail Running Experience</label>
-          <select class="w-full p-3 border rounded-lg bg-gray-200 text-black" required>
+          <select v-model="form.level" class="w-full p-3 border rounded-lg bg-gray-200 text-black" required>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
             <option value="advanced">Advanced</option>
@@ -240,7 +242,8 @@
         </div>
         <div class="mb-4">
           <label class="block text-gray-800 font-bold mb-2">Tell us why you want to join</label>
-          <textarea class="w-full p-3 border rounded-lg bg-gray-200 text-black" rows="4" placeholder="Motivation, goals, etc." required></textarea>
+          <textarea v-model="form.message" class="w-full p-3 border rounded-lg bg-gray-200 text-black" rows="4" placeholder="Motivation, goals, etc." required></textarea>
+          <p v-if="errors.message" class="text-red-500 text-sm">{{ errors.message }}</p>
         </div>
         <button type="submit" class="w-full p-3 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-lg uppercase">Submit Application</button>
       </form>
@@ -249,12 +252,56 @@
 </template>
 
 <script>
+import { ref } from 'vue';
+import { createClient } from '@supabase/supabase-js'
+
+// Initialize Supabase client
+const supabaseUrl = 'https://kmkyrbjzobzwlqiwqvgl.supabase.co'
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtta3lyYmp6b2J6d2xxaXdxdmdsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQ0NjU5ODIsImV4cCI6MjA2MDA0MTk4Mn0.e3azC9U-iQShFvWZyBkG73G05BTG5MAnzIzVLV3O9ZY'
+const supabase = createClient(supabaseUrl, supabaseKey)
+
 export default {
+  data() {
+    return {
+      form: {
+        name: '',
+        email: '',
+        level: 'beginner',
+        message: ''
+      },
+      errors: {}
+    };
+  },
   methods: {
     smoothScroll(target) {
       const element = document.querySelector(target);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    validateForm() {
+      this.errors = {};
+      if (!this.form.name) this.errors.name = 'Full Name is required.';
+      if (!this.form.email) {
+        this.errors.email = 'Email is required.';
+      } else if (!/\S+@\S+\.\S+/.test(this.form.email)) {
+        this.errors.email = 'Email is invalid.';
+      }
+      if (!this.form.message) this.errors.message = 'Motivation is required.';
+      return Object.keys(this.errors).length === 0;
+    },
+    async handleSubmit() {
+      if (this.validateForm()) {
+        const { data, error } = await supabase
+          .from('skyrunning_applications')
+          .insert([this.form]);
+
+        if (error) {
+          console.error('Error inserting data:', error);
+        } else {
+          alert('Application submitted successfully!');
+          this.form = { name: '', email: '', level: 'beginner', message: '' }; // Reset form
+        }
       }
     }
   }
