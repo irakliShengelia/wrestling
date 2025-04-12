@@ -8,13 +8,13 @@
       <p class="text-xl mt-4 text-gray-800">A high-altitude trail running camp across Georgia's majestic mountains</p>
       <div class="mt-6 flex flex-col md:flex-row gap-4">
         <a
-          href="#apply"
+          href="#booking"
           class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg uppercase"
         >
           Apply Now
         </a>
         <a
-          href="#booking"
+          href="#summary"
           class="inline-block px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg uppercase"
         >
           Read More
@@ -23,7 +23,7 @@
     </div>
   </section>
   
-  <section class="py-16 px-6 bg-white text-left">
+  <section id="summary" class="py-16 px-6 bg-white text-left">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-5xl font-bold text-black">Kazbegi Skyrunning Camp</h1>
       <h2 class="text-3xl font-semibold text-blue-600 mt-2">For intermediate to advanced trail runners</h2>
