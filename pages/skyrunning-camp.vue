@@ -220,8 +220,12 @@
     style="background-image: url('https://shared-img.digitize.ge/book-bg.jpg');"
   >
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold text-center">Request to Book</h2>
-      <form @submit.prevent="handleSubmit" class="mt-8 max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+      <h2 v-if="!submitted" class="text-4xl font-bold text-center">Request to Book</h2>
+      <div v-if="submitted" class="mt-8 text-center">
+        <h3 class="text-2xl font-bold text-white">Thank You!</h3>
+        <p class="text-lg mt-4">Your application has been submitted successfully. We will get back to you shortly!</p>
+      </div>
+      <form v-else @submit.prevent="handleSubmit" class="mt-8 max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
         <div class="mb-4">
           <label class="block text-gray-800 font-bold mb-2">Full Name</label>
           <input v-model="form.name" type="text" class="w-full p-3 border rounded-lg bg-gray-200 text-black" placeholder="Enter your name" required />
@@ -269,7 +273,8 @@ export default {
         level: 'beginner',
         message: ''
       },
-      errors: {}
+      errors: {},
+      submitted: false // New state to track submission
     };
   },
   methods: {
@@ -299,7 +304,7 @@ export default {
         if (error) {
           console.error('Error inserting data:', error);
         } else {
-          alert('Application submitted successfully!');
+          this.submitted = true; // Set submitted to true on successful submission
           this.form = { name: '', email: '', level: 'beginner', message: '' }; // Reset form
         }
       }
