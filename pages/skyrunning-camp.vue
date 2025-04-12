@@ -13,6 +13,12 @@
       >
         Apply Now
       </a>
+      <a
+        href="#booking"
+        class="mt-4 inline-block px-8 py-4 bg-blue-600 hover:bg-blue-800 text-white font-bold rounded-lg uppercase"
+      >
+        Read More
+      </a>
     </div>
   </section>
   
@@ -62,51 +68,72 @@
   <section class="py-16 px-6 bg-black text-center">
     <h2 class="text-4xl font-bold text-accent">Daily Itinerary</h2>
     
-    <h3 class="text-2xl font-semibold text-white mt-6">Day 1 | Kazbegi Arrival & Acclimatization</h3>
-    <p>
-      Transfer from Tbilisi to Kazbegi (Stepantsminda), a scenic 3–4 hour drive along the legendary Georgian Military Highway. Upon arrival, you'll settle into our cozy guesthouse or hotel nestled in the heart of the mountains, with views of the iconic Mount Kazbek. Depending on arrival time, we'll take a gentle acclimatization hike to the <strong>Gergeti Trinity Church</strong> (2170 m), perched above the village with jaw-dropping views of the Kazbegi massif. In the evening, we'll hold a safety briefing and overview of the week ahead.
-    </p>
-    <p><strong>Accommodation:</strong> Rooms Hotel Kazbegi, or a cozy local guesthouse, twin or double occupancy.</p>
+    <div class="mt-6">
+      <h3 class="text-2xl font-semibold text-white">Day 1 | Kazbegi Arrival & Acclimatization</h3>
+      <ul class="text-lg text-gray-300 mt-2">
+        <li>Transfer from Tbilisi to Kazbegi (Stepantsminda) - scenic 3–4 hour drive along the Georgian Military Highway.</li>
+        <li>Check into cozy guesthouse or hotel with views of Mount Kazbek.</li>
+        <li>Gentle acclimatization hike to <strong>Gergeti Trinity Church</strong> (2170 m) for stunning views.</li>
+        <li>Evening safety briefing and overview of the week ahead.</li>
+      </ul>
+      <p class="text-gray-300"><strong>Accommodation:</strong> Rooms Hotel Kazbegi or local guesthouse (twin/double occupancy).</p>
+    </div>
 
-    <h3 class="text-2xl font-semibold text-white mt-6">Day 2 | Khde Gorge & Truso Valley</h3>
-    <p>
-      We begin with a technical warm-up trail through <strong>Khde Gorge</strong>, one of the region's wildest and least-traveled canyons, with cascading waterfalls and steep, rugged terrain. Later, we transfer to <strong>Truso Valley</strong>—an otherworldly plateau flanked by colorful mineral springs, ancient ruins, and abandoned Ossetian villages. Optional dip in natural mineral springs to relax the legs.
-    </p>
-    <p><strong>The route:</strong> ~15km / 9.3mi | <strong>Elevation gain/loss:</strong> +800m | -800m | <strong>Approximate time:</strong> 4–5 hours | <strong>Accommodation:</strong> Return to Kazbegi lodging</p>
+    <div class="mt-6">
+      <h3 class="text-2xl font-semibold text-white">Day 2 | Khde Gorge & Truso Valley</h3>
+      <ul class="text-lg text-gray-300 mt-2">
+        <li>Technical warm-up trail through <strong>Khde Gorge</strong>, known for its rugged terrain.</li>
+        <li>Transfer to <strong>Truso Valley</strong> - explore colorful mineral springs and ancient ruins.</li>
+        <li>Optional dip in natural mineral springs to relax.</li>
+      </ul>
+      <p class="text-gray-300"><strong>The route:</strong> ~15km / 9.3mi | <strong>Elevation gain/loss:</strong> +800m | -800m | <strong>Approximate time:</strong> 4–5 hours | <strong>Accommodation:</strong> Return to Kazbegi lodging.</p>
+    </div>
 
-    <h3 class="text-2xl font-semibold text-white mt-6">Day 3 | Juta & Chaukhi Pass</h3>
-    <p>
-      After breakfast, we head to the alpine village of <strong>Juta</strong> (2200 m) and begin a breathtaking ascent to the <strong>Chaukhi Pass</strong> (3338 m). This route, often called the "Georgian Dolomites," is a favorite among skyrunners. Expect a mix of rocky climbs, fast descents, and panoramic ridgelines. We descend toward the <strong>Abudelauri Lakes</strong> if weather permits, or return via the same route for a high-altitude lunch near the pass.
-    </p>
-    <p><strong>The route:</strong> ~18km / 11mi | <strong>Elevation gain/loss:</strong> +1100m | -1100m | <strong>Highest point:</strong> 3338m / 10,950 ft | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Juta guesthouse or mountain hut (shared rooms)</p>
+    <div class="mt-6">
+      <h3 class="text-2xl font-semibold text-white">Day 3 | Juta & Chaukhi Pass</h3>
+      <ul class="text-lg text-gray-300 mt-2">
+        <li>Travel to the alpine village of <strong>Juta</strong> (2200 m).</li>
+        <li>Ascent to <strong>Chaukhi Pass</strong> (3338 m) - enjoy rocky climbs and panoramic views.</li>
+        <li>Descend toward <strong>Abudelauri Lakes</strong> if weather permits.</li>
+      </ul>
+      <p class="text-gray-300"><strong>The route:</strong> ~18km / 11mi | <strong>Elevation gain/loss:</strong> +1100m | -1100m | <strong>Highest point:</strong> 3338m / 10,950 ft | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Juta guesthouse or mountain hut (shared rooms).</p>
+    </div>
 
-    <h3 class="text-2xl font-semibold text-white mt-6">Day 4 | Sno Valley Ridge Run</h3>
-    <p>
-      Today we explore the ridgeline above <strong>Sno Valley</strong>, linking traditional trails with sheep tracks and panoramic lookouts. This is a wilder, off-the-beaten-path day where you'll see few people and feel immersed in the Caucasus wilderness. Expect technical terrain and sweeping views of the Kazbegi region and Dagestan borderlands.
-    </p>
-    <p><strong>The route:</strong> ~17km / 10.5mi | <strong>Elevation gain/loss:</strong> +950m | -950m | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Return to Kazbegi base</p>
+    <div class="mt-6">
+      <h3 class="text-2xl font-semibold text-white">Day 4 | Sno Valley Ridge Run</h3>
+      <ul class="text-lg text-gray-300 mt-2">
+        <li>Explore the ridgeline above <strong>Sno Valley</strong> - link traditional trails with sheep tracks.</li>
+        <li>Experience technical terrain and panoramic views of the Kazbegi region.</li>
+      </ul>
+      <p class="text-gray-300"><strong>The route:</strong> ~17km / 10.5mi | <strong>Elevation gain/loss:</strong> +950m | -950m | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Return to Kazbegi base.</p>
+    </div>
 
-    <h3 class="text-2xl font-semibold text-white mt-6">Day 5 | Rest Day or Optional Cultural Tour</h3>
-    <p>
-      A well-earned rest day. You can opt to relax, soak in the views from a cafe terrace, or take an optional cultural tour to the <strong>Dariali Monastery</strong>, <strong>Gveleti Waterfalls</strong>, or a cheese-making experience with local farmers. This is a great time to recharge and prep for the next set of mountain challenges.
-    </p>
-    <p><strong>Accommodation:</strong> Kazbegi guesthouse/hotel</p>
-    <h2>Day 6 | Arsha to Gergeti Ridge Traverse</h2>
-    <p>
-      We set out from <strong>Arsha village</strong> and climb a scenic trail through forests and wild meadows to a hidden ridge above Gergeti. This traverse offers some of the best trail running and skyrunning in the region, with sustained climbs, technical ridgelines, and fast runnable descents.
-    </p>
-    <p>
-      We'll finish at a high alpine meadow with views of <strong>Mount Kazbek</strong> (5047 m), before making our way back to town.
-    </p>
-    <p><strong>The route:</strong> ~20km / 12.4mi</p>
-    <p><strong>Elevation gain/loss:</strong> +1200m | -1200m</p>
-    <p><strong>Approximate time:</strong> 6–7 hours</p>
-    <p><strong>Accommodation:</strong> Final night in Kazbegi</p>
-    <h2>Day 7 | Farewell & Transfer to Tbilisi</h2>
-    <p>
-      After a hearty breakfast, we pack up and transfer back to Tbilisi. We'll stop at <strong>Ananuri Fortress</strong> or <strong>Zhinvali Reservoir</strong> on the way for photos and snacks.
-    </p>
-    <p>This marks the end of an unforgettable week in the Caucasus.</p>
+    <div class="mt-6">
+      <h3 class="text-2xl font-semibold text-white">Day 5 | Rest Day or Optional Cultural Tour</h3>
+      <ul class="text-lg text-gray-300 mt-2">
+        <li>Enjoy a well-earned rest day - relax or soak in views from a cafe terrace.</li>
+        <li>Optional cultural tour to <strong>Dariali Monastery</strong>, <strong>Gveleti Waterfalls</strong>, or a cheese-making experience.</li>
+      </ul>
+      <p class="text-gray-300"><strong>Accommodation:</strong> Kazbegi guesthouse/hotel.</p>
+    </div>
+
+    <div class="mt-6">
+      <h3 class="text-2xl font-semibold text-white">Day 6 | Arsha to Gergeti Ridge Traverse</h3>
+      <ul class="text-lg text-gray-300 mt-2">
+        <li>Climb from <strong>Arsha village</strong> to a hidden ridge above Gergeti.</li>
+        <li>Experience some of the best trail running with sustained climbs and technical ridgelines.</li>
+      </ul>
+      <p class="text-gray-300"><strong>The route:</strong> ~20km / 12.4mi | <strong>Elevation gain/loss:</strong> +1200m | -1200m | <strong>Approximate time:</strong> 6–7 hours | <strong>Accommodation:</strong> Final night in Kazbegi.</p>
+    </div>
+
+    <div class="mt-6">
+      <h3 class="text-2xl font-semibold text-white">Day 7 | Farewell & Transfer to Tbilisi</h3>
+      <ul class="text-lg text-gray-300 mt-2">
+        <li>After breakfast, pack up and transfer back to Tbilisi.</li>
+        <li>Stop at <strong>Ananuri Fortress</strong> or <strong>Zhinvali Reservoir</strong> for photos and snacks.</li>
+      </ul>
+      <p class="text-gray-300">This marks the end of an unforgettable week in the Caucasus.</p>
+    </div>
   </section>
 
   <!-- Cancellation Policy Section -->
