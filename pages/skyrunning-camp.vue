@@ -26,17 +26,17 @@
   <section class="py-16 px-6 bg-white text-left">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-5xl font-bold text-black">Kazbegi Skyrunning Camp</h1>
-      <h2 class="text-3xl font-semibold text-blue-600 mt-2">COMFORT VERSION</h2>
+      <h2 class="text-3xl font-semibold text-blue-600 mt-2">For intermediate to advanced trail runners</h2>
       <p class="text-lg text-gray-700 mt-4">
         An extraordinary week of high-altitude running in the Caucasus mountains of Georgia — a skyrunner's dream through untamed trails, ancient culture, and breathtaking views.
       </p>
 
       <h3 class="text-2xl font-semibold text-black mt-6">2025 Dates</h3>
       <div class="dates mt-2">
-        <p class="text-lg text-blue-600"><strong>Sept 25 - Oct 2, 2025</strong> (6 spots left)</p>
+        <p class="text-lg text-blue-600"><strong>Sept 22 - Sep 29, 2025</strong> (6 spots left)</p>
       </div>
 
-      <p class="text-lg font-bold text-black mt-4"><strong>Price:</strong> 2850 EUR</p>
+      <p class="text-lg font-bold text-black mt-4"><strong>Price:</strong> <span class="line-through">2700 USD</span> <span class="text-red-600">2495 USD</span> (Earlybird)</p>
       <p class="text-lg text-gray-700">(All-Inclusive, details below)</p>
     </div>
   </section>
@@ -67,7 +67,7 @@
   </section>
 
   <!-- Daily Itinerary Section -->
-  <section class="py-16 px-6 bg-white text-left shadow-lg rounded-lg">
+  <section class="py-16 px-6 bg-white text-left shadow-lg">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold text-blue-600 mb-6 border-b-2 border-blue-600 pb-2">Daily Itinerary</h2>
       
@@ -179,7 +179,7 @@
   <!-- Request to Book Section -->
   <section id="booking" class="py-16 px-6 bg-blue-600 text-white text-left w-full">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl font-bold">Request to Book</h2>
+      <h2 class="text-4xl font-bold text-center">Request to Book</h2>
       <form class="mt-8 max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
         <div class="mb-4">
           <label class="block text-gray-800 font-bold mb-2">Full Name</label>
