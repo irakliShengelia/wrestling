@@ -20,9 +20,10 @@
           &#9776;
         </button>
         <nav id="menu" class="fixed top-0 left-0 h-full w-full bg-black bg-opacity-90 transform -translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-6 md:static md:flex-row md:space-x-4 md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:space-y-0">
-          <NuxtLink to="/wrestling-camp" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase">Wrestling Camp</NuxtLink>
-          <NuxtLink to="/skyrunning-camp" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase">Sky Running Camp</NuxtLink>
-          <NuxtLink to="/about-us" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase">About Us</NuxtLink>
+          <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl" @click="closeMenu">✖</button>
+          <NuxtLink to="/wrestling-camp" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase" @click="closeMenu">Wrestling Camp</NuxtLink>
+          <NuxtLink to="/skyrunning-camp" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase" @click="closeMenu">Sky Running Camp</NuxtLink>
+          <NuxtLink to="/about-us" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase" @click="closeMenu">About Us</NuxtLink>
         </nav>
       </header>
 
@@ -38,6 +39,7 @@
 
 <script setup>
 import { useHead } from 'nuxt/app';
+import { ref, onMounted } from 'vue';
 
 useHead({
   script: [
@@ -60,6 +62,10 @@ onMounted(() => {
     menu.value.classList.toggle('-translate-x-full');
   });
 });
+
+const closeMenu = () => {
+  menu.value.classList.add('-translate-x-full');
+};
 </script> 
 
 <style>
