@@ -91,9 +91,6 @@
       A well-earned rest day. You can opt to relax, soak in the views from a cafe terrace, or take an optional cultural tour to the <strong>Dariali Monastery</strong>, <strong>Gveleti Waterfalls</strong>, or a cheese-making experience with local farmers. This is a great time to recharge and prep for the next set of mountain challenges.
     </p>
     <p><strong>Accommodation:</strong> Kazbegi guesthouse/hotel</p>
-  </section>
-
-  <section>
     <h2>Day 6 | Arsha to Gergeti Ridge Traverse</h2>
     <p>
       We set out from <strong>Arsha village</strong> and climb a scenic trail through forests and wild meadows to a hidden ridge above Gergeti. This traverse offers some of the best trail running and skyrunning in the region, with sustained climbs, technical ridgelines, and fast runnable descents.
@@ -105,9 +102,6 @@
     <p><strong>Elevation gain/loss:</strong> +1200m | -1200m</p>
     <p><strong>Approximate time:</strong> 6–7 hours</p>
     <p><strong>Accommodation:</strong> Final night in Kazbegi</p>
-  </section>
-
-  <section>
     <h2>Day 7 | Farewell & Transfer to Tbilisi</h2>
     <p>
       After a hearty breakfast, we pack up and transfer back to Tbilisi. We'll stop at <strong>Ananuri Fortress</strong> or <strong>Zhinvali Reservoir</strong> on the way for photos and snacks.
