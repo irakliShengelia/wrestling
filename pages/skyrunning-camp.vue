@@ -3,19 +3,19 @@
     class="h-screen bg-cover bg-center flex items-center justify-center text-black"
     style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
   >
-    <div class="bg-white/80 p-10 rounded-xl text-center shadow-lg">
-      <h1 class="text-5xl md:text-6xl font-bold">Sky-Running Camp with Pascal Egli</h1>
+    <div class="bg-white/90 p-10 rounded-xl text-center shadow-lg">
+      <h1 class="text-5xl md:text-6xl font-bold text-blue-600">Sky-Running Camp with Pascal Egli</h1>
       <p class="text-xl mt-4 text-gray-800">A high-altitude trail running camp across Georgia's majestic mountains</p>
       <div class="mt-6 flex flex-col md:flex-row gap-4">
         <a
           href="#apply"
-          class="inline-block px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg uppercase"
+          class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg uppercase"
         >
           Apply Now
         </a>
         <a
           href="#booking"
-          class="inline-block px-8 py-4 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg uppercase"
+          class="inline-block px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg uppercase"
         >
           Read More
         </a>
@@ -40,104 +40,104 @@
   </section>
 
   <!-- Camp Overview Section -->
-  <section class="py-16 px-6 bg-gray-900 text-center">
-    <h2 class="text-4xl font-bold text-accent">Kazbegi Skyrunning Camp Overview</h2>
-    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+  <section class="py-16 px-6 bg-gray-100 text-center">
+    <h2 class="text-4xl font-bold text-blue-600">Kazbegi Skyrunning Camp Overview</h2>
+    <p class="text-lg text-gray-800 mt-4 max-w-3xl mx-auto">
       Welcome to Kazbegi, a hidden gem nestled in the Greater Caucasus. Picture rugged alpine ridges, sweeping valleys, glaciers, and remote trails winding through centuries-old villages. This 7-day skyrunning camp offers an epic blend of endurance, adventure, and exploration.
     </p>
-    <p class="text-lg text-muted mt-4">
+    <p class="text-lg text-gray-800 mt-4">
       This adventure includes nearly 100 miles (160 km) of trail running with over 9,800 meters (32,000 ft) of elevation gain. It's challenging, beautiful, and unlike anything else in Europe. Starting and ending in Tbilisi, we'll base ourselves in Stepantsminda (Kazbegi), Georgia — gateway to Mount Kazbek (5,047m).
     </p>
-    <h3 class="text-2xl font-semibold text-white mt-6">Why Travel With Us</h3>
-    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold text-black mt-6">Why Travel With Us</h3>
+    <p class="text-lg text-gray-800 mt-4 max-w-3xl mx-auto">
       We are a small, family-run team who specialize in crafting unique running experiences that balance raw wilderness with comfort. Every detail is handled with care to ensure a meaningful and memorable journey — because this is your dream, your effort, and your time.
     </p>
-    <h3 class="text-2xl font-semibold text-white mt-6">Who Is This For?</h3>
-    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold text-black mt-6">Who Is This For?</h3>
+    <p class="text-lg text-gray-800 mt-4 max-w-3xl mx-auto">
       If you're a trail runner or road runner seeking the next level of adventure, this camp is for you. You don't need to be a racer — just in good shape and ready to run for 6–8 hours daily with substantial elevation gain.
     </p>
-    <h3 class="text-2xl font-semibold text-white mt-6">Fitness Requirements</h3>
-    <p class="text-lg text-muted mt-4 max-w-3xl mx-auto">
+    <h3 class="text-2xl font-semibold text-black mt-6">Fitness Requirements</h3>
+    <p class="text-lg text-gray-800 mt-4 max-w-3xl mx-auto">
       This is a high-effort trip with daily outings of 6–8 hours and elevation gains of up to 1500m. You should be in excellent hiking/running condition and capable of mountain terrain. Not sure? Let's chat.
     </p>
   </section>
 
   <!-- Daily Itinerary Section -->
-  <section class="py-16 px-6 bg-black text-center">
-    <h2 class="text-4xl font-bold text-accent">Daily Itinerary</h2>
+  <section class="py-16 px-6 bg-white text-center">
+    <h2 class="text-4xl font-bold text-blue-600">Daily Itinerary</h2>
     
     <div class="mt-6">
-      <h3 class="text-2xl font-semibold text-white">Day 1 | Kazbegi Arrival & Acclimatization</h3>
-      <ul class="text-lg text-gray-300 mt-2">
+      <h3 class="text-2xl font-semibold text-black">Day 1 | Kazbegi Arrival & Acclimatization</h3>
+      <ul class="text-lg text-gray-800 mt-2">
         <li>Transfer from Tbilisi to Kazbegi (Stepantsminda) - scenic 3–4 hour drive along the Georgian Military Highway.</li>
         <li>Check into cozy guesthouse or hotel with views of Mount Kazbek.</li>
         <li>Gentle acclimatization hike to <strong>Gergeti Trinity Church</strong> (2170 m) for stunning views.</li>
         <li>Evening safety briefing and overview of the week ahead.</li>
       </ul>
-      <p class="text-gray-300"><strong>Accommodation:</strong> Rooms Hotel Kazbegi or local guesthouse (twin/double occupancy).</p>
+      <p class="text-gray-800"><strong>Accommodation:</strong> Rooms Hotel Kazbegi or local guesthouse (twin/double occupancy).</p>
     </div>
 
     <div class="mt-6">
-      <h3 class="text-2xl font-semibold text-white">Day 2 | Khde Gorge & Truso Valley</h3>
-      <ul class="text-lg text-gray-300 mt-2">
+      <h3 class="text-2xl font-semibold text-black">Day 2 | Khde Gorge & Truso Valley</h3>
+      <ul class="text-lg text-gray-800 mt-2">
         <li>Technical warm-up trail through <strong>Khde Gorge</strong>, known for its rugged terrain.</li>
         <li>Transfer to <strong>Truso Valley</strong> - explore colorful mineral springs and ancient ruins.</li>
         <li>Optional dip in natural mineral springs to relax.</li>
       </ul>
-      <p class="text-gray-300"><strong>The route:</strong> ~15km / 9.3mi | <strong>Elevation gain/loss:</strong> +800m | -800m | <strong>Approximate time:</strong> 4–5 hours | <strong>Accommodation:</strong> Return to Kazbegi lodging.</p>
+      <p class="text-gray-800"><strong>The route:</strong> ~15km / 9.3mi | <strong>Elevation gain/loss:</strong> +800m | -800m | <strong>Approximate time:</strong> 4–5 hours | <strong>Accommodation:</strong> Return to Kazbegi lodging.</p>
     </div>
 
     <div class="mt-6">
-      <h3 class="text-2xl font-semibold text-white">Day 3 | Juta & Chaukhi Pass</h3>
-      <ul class="text-lg text-gray-300 mt-2">
+      <h3 class="text-2xl font-semibold text-black">Day 3 | Juta & Chaukhi Pass</h3>
+      <ul class="text-lg text-gray-800 mt-2">
         <li>Travel to the alpine village of <strong>Juta</strong> (2200 m).</li>
         <li>Ascent to <strong>Chaukhi Pass</strong> (3338 m) - enjoy rocky climbs and panoramic views.</li>
         <li>Descend toward <strong>Abudelauri Lakes</strong> if weather permits.</li>
       </ul>
-      <p class="text-gray-300"><strong>The route:</strong> ~18km / 11mi | <strong>Elevation gain/loss:</strong> +1100m | -1100m | <strong>Highest point:</strong> 3338m / 10,950 ft | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Juta guesthouse or mountain hut (shared rooms).</p>
+      <p class="text-gray-800"><strong>The route:</strong> ~18km / 11mi | <strong>Elevation gain/loss:</strong> +1100m | -1100m | <strong>Highest point:</strong> 3338m / 10,950 ft | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Juta guesthouse or mountain hut (shared rooms).</p>
     </div>
 
     <div class="mt-6">
-      <h3 class="text-2xl font-semibold text-white">Day 4 | Sno Valley Ridge Run</h3>
-      <ul class="text-lg text-gray-300 mt-2">
+      <h3 class="text-2xl font-semibold text-black">Day 4 | Sno Valley Ridge Run</h3>
+      <ul class="text-lg text-gray-800 mt-2">
         <li>Explore the ridgeline above <strong>Sno Valley</strong> - link traditional trails with sheep tracks.</li>
         <li>Experience technical terrain and panoramic views of the Kazbegi region.</li>
       </ul>
-      <p class="text-gray-300"><strong>The route:</strong> ~17km / 10.5mi | <strong>Elevation gain/loss:</strong> +950m | -950m | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Return to Kazbegi base.</p>
+      <p class="text-gray-800"><strong>The route:</strong> ~17km / 10.5mi | <strong>Elevation gain/loss:</strong> +950m | -950m | <strong>Approximate time:</strong> 5–6 hours | <strong>Accommodation:</strong> Return to Kazbegi base.</p>
     </div>
 
     <div class="mt-6">
-      <h3 class="text-2xl font-semibold text-white">Day 5 | Rest Day or Optional Cultural Tour</h3>
-      <ul class="text-lg text-gray-300 mt-2">
+      <h3 class="text-2xl font-semibold text-black">Day 5 | Rest Day or Optional Cultural Tour</h3>
+      <ul class="text-lg text-gray-800 mt-2">
         <li>Enjoy a well-earned rest day - relax or soak in views from a cafe terrace.</li>
         <li>Optional cultural tour to <strong>Dariali Monastery</strong>, <strong>Gveleti Waterfalls</strong>, or a cheese-making experience.</li>
       </ul>
-      <p class="text-gray-300"><strong>Accommodation:</strong> Kazbegi guesthouse/hotel.</p>
+      <p class="text-gray-800"><strong>Accommodation:</strong> Kazbegi guesthouse/hotel.</p>
     </div>
 
     <div class="mt-6">
-      <h3 class="text-2xl font-semibold text-white">Day 6 | Arsha to Gergeti Ridge Traverse</h3>
-      <ul class="text-lg text-gray-300 mt-2">
+      <h3 class="text-2xl font-semibold text-black">Day 6 | Arsha to Gergeti Ridge Traverse</h3>
+      <ul class="text-lg text-gray-800 mt-2">
         <li>Climb from <strong>Arsha village</strong> to a hidden ridge above Gergeti.</li>
         <li>Experience some of the best trail running with sustained climbs and technical ridgelines.</li>
       </ul>
-      <p class="text-gray-300"><strong>The route:</strong> ~20km / 12.4mi | <strong>Elevation gain/loss:</strong> +1200m | -1200m | <strong>Approximate time:</strong> 6–7 hours | <strong>Accommodation:</strong> Final night in Kazbegi.</p>
+      <p class="text-gray-800"><strong>The route:</strong> ~20km / 12.4mi | <strong>Elevation gain/loss:</strong> +1200m | -1200m | <strong>Approximate time:</strong> 6–7 hours | <strong>Accommodation:</strong> Final night in Kazbegi.</p>
     </div>
 
     <div class="mt-6">
-      <h3 class="text-2xl font-semibold text-white">Day 7 | Farewell & Transfer to Tbilisi</h3>
-      <ul class="text-lg text-gray-300 mt-2">
+      <h3 class="text-2xl font-semibold text-black">Day 7 | Farewell & Transfer to Tbilisi</h3>
+      <ul class="text-lg text-gray-800 mt-2">
         <li>After breakfast, pack up and transfer back to Tbilisi.</li>
         <li>Stop at <strong>Ananuri Fortress</strong> or <strong>Zhinvali Reservoir</strong> for photos and snacks.</li>
       </ul>
-      <p class="text-gray-300">This marks the end of an unforgettable week in the Caucasus.</p>
+      <p class="text-gray-800">This marks the end of an unforgettable week in the Caucasus.</p>
     </div>
   </section>
 
   <!-- Cancellation Policy Section -->
-  <section class="py-16 px-6 bg-gray-900 text-center">
-    <h2 class="text-4xl font-bold text-accent">Cancellation Policy</h2>
-    <ul class="text-lg text-muted mt-4 max-w-3xl mx-auto list-disc list-inside">
+  <section class="py-16 px-6 bg-gray-100 text-center">
+    <h2 class="text-4xl font-bold text-blue-600">Cancellation Policy</h2>
+    <ul class="text-lg text-gray-800 mt-4 max-w-3xl mx-auto list-disc list-inside">
       <li>Pending trip: 25% deposit is fully refundable</li>
       <li>Confirmed trip: 25% deposit is non-refundable, but transferable to another trip within 1 year</li>
       <li>Less than 60 days before trip: no refund</li>
@@ -145,30 +145,30 @@
   </section>
 
   <!-- Request to Book Section -->
-  <section id="booking" class="py-16 px-6 bg-accent text-white text-center">
+  <section id="booking" class="py-16 px-6 bg-blue-600 text-white text-center">
     <h2 class="text-4xl font-bold">Request to Book</h2>
-    <form class="mt-8 max-w-xl mx-auto bg-black p-6 rounded-lg shadow-lg">
+    <form class="mt-8 max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
       <div class="mb-4">
-        <label class="block text-muted font-bold mb-2">Full Name</label>
-        <input type="text" class="w-full p-3 border rounded-lg bg-gray-900 text-white" placeholder="Enter your name" required />
+        <label class="block text-gray-800 font-bold mb-2">Full Name</label>
+        <input type="text" class="w-full p-3 border rounded-lg bg-gray-200 text-black" placeholder="Enter your name" required />
       </div>
       <div class="mb-4">
-        <label class="block text-muted font-bold mb-2">Email</label>
-        <input type="email" class="w-full p-3 border rounded-lg bg-gray-900 text-white" placeholder="Enter your email" required />
+        <label class="block text-gray-800 font-bold mb-2">Email</label>
+        <input type="email" class="w-full p-3 border rounded-lg bg-gray-200 text-black" placeholder="Enter your email" required />
       </div>
       <div class="mb-4">
-        <label class="block text-muted font-bold mb-2">Trail Running Experience</label>
-        <select class="w-full p-3 border rounded-lg bg-gray-900 text-white" required>
+        <label class="block text-gray-800 font-bold mb-2">Trail Running Experience</label>
+        <select class="w-full p-3 border rounded-lg bg-gray-200 text-black" required>
           <option value="beginner">Beginner</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
         </select>
       </div>
       <div class="mb-4">
-        <label class="block text-muted font-bold mb-2">Tell us why you want to join</label>
-        <textarea class="w-full p-3 border rounded-lg bg-gray-900 text-white" rows="4" placeholder="Motivation, goals, etc." required></textarea>
+        <label class="block text-gray-800 font-bold mb-2">Tell us why you want to join</label>
+        <textarea class="w-full p-3 border rounded-lg bg-gray-200 text-black" rows="4" placeholder="Motivation, goals, etc." required></textarea>
       </div>
-      <button type="submit" class="w-full p-3 bg-blue-700 hover:bg-blue-900 text-white font-bold rounded-lg uppercase">Submit Application</button>
+      <button type="submit" class="w-full p-3 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-lg uppercase">Submit Application</button>
     </form>
   </section>
 </template>
