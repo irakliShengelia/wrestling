@@ -28,6 +28,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
     </a>
+    <div class="absolute bottom-4 left-4 text-white text-sm bg-black bg-opacity-50 p-1 rounded">Photo by Thomas Lutz</div>
   </section>
   
   <section id="summary" class="py-16 px-6 bg-white text-left relative">
