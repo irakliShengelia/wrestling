@@ -12,20 +12,35 @@
     </Head>
     <div>
       <!-- Nav Bar -->
-      <header class="w-full bg-black bg-opacity-80 py-4 px-6 flex items-center justify-between">
-        <div class="text-xl font-bold uppercase">
-          <NuxtLink to="/" exact-active-class="text-ufc-red">Caucasus Collective</NuxtLink>
+      <header class="w-full bg-black bg-opacity-80 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+          <div class="text-xl font-bold uppercase">
+            <NuxtLink to="/" exact-active-class="text-ufc-red">Caucasus Collective</NuxtLink>
+          </div>
+          <!-- Mobile menu button -->
+          <button @click="isMenuOpen = !isMenuOpen" class="md:hidden text-white z-50">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path v-if="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <!-- Desktop menu -->
+          <nav class="hidden md:flex items-center space-x-8">
+            <NuxtLink to="/wrestling-camp" exact-active-class="text-ufc-red" class="text-lg hover:text-ufc-blue uppercase">Wrestling Camp</NuxtLink>
+            <NuxtLink to="/skyrunning-camp" exact-active-class="text-ufc-red" class="text-lg hover:text-ufc-blue uppercase">Sky Running Camp</NuxtLink>
+            <NuxtLink to="/about-us" exact-active-class="text-ufc-red" class="text-lg hover:text-ufc-blue uppercase">About Us</NuxtLink>
+          </nav>
         </div>
-        <button id="menu-button" class="block md:hidden text-white text-2xl">
-          &#9776;
-        </button>
-        <nav id="menu" class="fixed top-0 left-0 h-full w-full bg-black bg-opacity-90 transform -translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-6">
-          <button id="close-menu" class="absolute top-4 right-4 text-white text-2xl" @click="closeMenu">✖</button>
-          <NuxtLink to="/wrestling-camp" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase" @click="closeMenu">Wrestling Camp</NuxtLink>
-          <NuxtLink to="/skyrunning-camp" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase" @click="closeMenu">Sky Running Camp</NuxtLink>
-          <NuxtLink to="/about-us" exact-active-class="text-ufc-red" class="block text-2xl hover:text-ufc-blue uppercase" @click="closeMenu">About Us</NuxtLink>
-        </nav>
       </header>
+
+      <!-- Mobile menu overlay -->
+      <div v-show="isMenuOpen" class="fixed inset-0 bg-black bg-opacity-90 z-40 md:hidden">
+        <nav class="flex flex-col items-center justify-center h-full space-y-8">
+          <NuxtLink to="/wrestling-camp" exact-active-class="text-ufc-red" class="text-2xl hover:text-ufc-blue uppercase" @click="isMenuOpen = false">Wrestling Camp</NuxtLink>
+          <NuxtLink to="/skyrunning-camp" exact-active-class="text-ufc-red" class="text-2xl hover:text-ufc-blue uppercase" @click="isMenuOpen = false">Sky Running Camp</NuxtLink>
+          <NuxtLink to="/about-us" exact-active-class="text-ufc-red" class="text-2xl hover:text-ufc-blue uppercase" @click="isMenuOpen = false">About Us</NuxtLink>
+        </nav>
+      </div>
 
       <slot />
       
@@ -39,24 +54,9 @@
 
 <script setup>
 import { useHead } from 'nuxt/app';
-import { ref, onMounted } from 'vue';
+import { ref } from 'vue';
 
-// You can add any necessary script logic here
-const menuButton = ref(null);
-const menu = ref(null);
-
-onMounted(() => {
-  menuButton.value = document.getElementById('menu-button');
-  menu.value = document.getElementById('menu');
-
-  menuButton.value.addEventListener('click', () => {
-    menu.value.classList.toggle('-translate-x-full');
-  });
-});
-
-const closeMenu = () => {
-  menu.value.classList.add('-translate-x-full');
-};
+const isMenuOpen = ref(false);
 </script> 
 
 <style>
