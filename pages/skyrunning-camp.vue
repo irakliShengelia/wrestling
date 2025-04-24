@@ -9,14 +9,14 @@
     <meta property="og:url" content="https://caucasuscollective.com/skyrunning-camp" />
     <meta property="og:title" content="Skyrunning Camp in Georgia | Caucasus Collective" />
     <meta property="og:description" content="Join our exclusive skyrunning camp in Georgia's Caucasus mountains. Experience high-altitude endurance training, technical trail running, and breathtaking alpine landscapes." />
-    <meta property="og:image" content="https://shared-img.digitize.ge/skyrunning-hero.jpg" />
+    <meta property="og:image" content="https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://caucasuscollective.com/skyrunning-camp" />
     <meta property="twitter:title" content="Skyrunning Camp in Georgia | Caucasus Collective" />
     <meta property="twitter:description" content="Join our exclusive skyrunning camp in Georgia's Caucasus mountains. Experience high-altitude endurance training, technical trail running, and breathtaking alpine landscapes." />
-    <meta property="twitter:image" content="https://shared-img.digitize.ge/skyrunning-hero.jpg" />
+    <meta property="twitter:image" content="https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg" />
   </Head>
   <div 
     id="bottom-navigation"
