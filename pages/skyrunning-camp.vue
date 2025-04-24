@@ -215,6 +215,28 @@
     </a>
   </section>
 
+  <!-- Skyrunning Mission Section -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6 text-blue-600">About Caucasus Collective</h2>
+        <div class="w-24 h-1 bg-blue-600 mx-auto mb-10"></div>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Founded in 2023 in the heart of Georgia's Caucasus region, Caucasus Collective was born from the combined expertise of three visionaries with a shared passion. Dachi brought his mastery of high-altitude endurance training, Irakli contributed his extensive travel industry knowledge, and together they created something truly unique in the world of skyrunning.
+        </p>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-6 leading-relaxed">
+          This powerful fusion of mountain expertise and adventure tourism allows us to create running experiences that harness Georgia's spectacular alpine landscapes. We combine technical trail running with high-altitude endurance training to forge mental and physical resilience like no other program.
+        </p>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-6 leading-relaxed">
+          Our skyrunning camps are not for the faint of heart. We push athletes beyond conventional limits in settings that demand complete focus, unwavering determination, and perfect technique. Whether racing along alpine ridgelines or navigating technical descents, our athletes leave transformed—not just in skill, but in spirit.
+        </p>
+        <NuxtLink to="/about-us" class="inline-block mt-8 text-gray-600 hover:text-blue-600 transition-colors duration-300">
+          Read more about our story →
+        </NuxtLink>
+      </div>
+    </div>
+  </section>
+
   <!-- Request to Book Section -->
   <section
     id="booking" class="py-16 px-6 bg-blue-600 text-white text-left w-full relative bg-cover md:bg-center"
