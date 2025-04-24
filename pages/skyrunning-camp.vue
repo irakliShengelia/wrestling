@@ -426,7 +426,7 @@ export default {
         // Set new timeout to hide side nav after 1 second of no scrolling
         this.scrollTimeout = setTimeout(() => {
           this.shouldShowBottomNav = false;
-        }, 1000);
+        }, 6000);
       }
     }
   },
