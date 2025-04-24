@@ -356,16 +356,22 @@ export default {
       shouldShowApplyNowButton: false,
       shouldShowBottomNav: false,
       lastScrollY: 0,
-      scrollTimeout: null
+      scrollTimeout: null,
+      isManualScroll: true
     };
   },
   methods: {
     smoothScroll(target) {
+      this.isManualScroll = false;
       const element = document.querySelector(target);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
         this.shouldShowBottomNav = false;
       }
+      // Reset the flag after a short delay to allow for smooth scroll completion
+      setTimeout(() => {
+        this.isManualScroll = true;
+      }, 1000);
     },
     validateForm() {
       this.errors = {};
@@ -405,28 +411,32 @@ export default {
         const bookingInView = bookingRect.top <= window.innerHeight && bookingRect.bottom >= 0;
         
         this.shouldShowApplyNowButton = !heroInView && !bookingInView;
-        this.shouldShowBottomNav = !heroInView && !bookingInView;
         
-        // Check scroll direction
-        const currentScrollY = window.scrollY;
-        if (currentScrollY > this.lastScrollY) {
-          // Scrolling down
-          this.shouldShowBottomNav = true;
-        } else {
-          // Scrolling up
-          this.shouldShowBottomNav = false;
-        }
-        this.lastScrollY = currentScrollY;
+        // Only update bottom nav visibility for manual scrolling
+        if (this.isManualScroll) {
+          this.shouldShowBottomNav = !heroInView && !bookingInView;
+          
+          // Check scroll direction
+          const currentScrollY = window.scrollY;
+          if (currentScrollY > this.lastScrollY) {
+            // Scrolling down
+            this.shouldShowBottomNav = true;
+          } else {
+            // Scrolling up
+            this.shouldShowBottomNav = false;
+          }
+          this.lastScrollY = currentScrollY;
 
-        // Clear existing timeout
-        if (this.scrollTimeout) {
-          clearTimeout(this.scrollTimeout);
-        }
+          // Clear existing timeout
+          if (this.scrollTimeout) {
+            clearTimeout(this.scrollTimeout);
+          }
 
-        // Set new timeout to hide side nav after 1 second of no scrolling
-        this.scrollTimeout = setTimeout(() => {
-          this.shouldShowBottomNav = false;
-        }, 6000);
+          // Set new timeout to hide side nav after 1 second of no scrolling
+          this.scrollTimeout = setTimeout(() => {
+            this.shouldShowBottomNav = false;
+          }, 6000);
+        }
       }
     }
   },
