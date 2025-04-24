@@ -1,22 +1,22 @@
 <template>
   <section
-    class="h-screen bg-cover bg-center flex items-center justify-center text-black relative"
+    class="h-[80vh] bg-cover bg-center flex items-center justify-center relative"
     style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
   >
-    <div class="bg-white/90 p-10 rounded-xl text-left shadow-lg max-w-4xl mx-auto">
-      <h1 class="text-5xl md:text-6xl font-bold text-blue-600">Sky-Running Camp with Pascal Egli</h1>
-      <p class="text-xl mt-4 text-gray-800">A high-altitude trail running camp across Georgia's majestic mountains</p>
-      <div class="mt-6 flex flex-col md:flex-row gap-4">
+    <div class="max-w-4xl mx-auto px-4 md:px-8 text-white text-center md:text-left">
+      <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Sky-Running Camp with Pascal Egli</h1>
+      <p class="text-lg md:text-xl mt-4 text-white drop-shadow-lg">A high-altitude trail running camp across Georgia's majestic mountains</p>
+      <div class="mt-6 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
         <a
           href="#booking"
-          class="inline-block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg uppercase"
+          class="inline-block px-6 md:px-8 py-3 md:py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg uppercase"
           @click.prevent="smoothScroll('#booking')"
         >
           Apply Now
         </a>
         <a
           href="#summary"
-          class="inline-block px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg uppercase"
+          class="inline-block px-6 md:px-8 py-3 md:py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg uppercase"
           @click.prevent="smoothScroll('#summary')"
         >
           Read More
@@ -24,7 +24,7 @@
       </div>
     </div>
     <a href="#summary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" @click.prevent="smoothScroll('#summary')">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
     </a>
