@@ -2,41 +2,49 @@
   <div 
     id="bottom-navigation"
     v-show="shouldShowBottomNav"
-    class="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-sm border-t border-gray-700/50 transition-all duration-300 transform"
+    class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-lg transition-all duration-300 transform"
     :class="shouldShowBottomNav ? 'translate-y-0' : 'translate-y-full'"
   >
-    <nav class="flex justify-around items-center py-3">
+    <nav class="flex justify-around items-center py-4">
       <a 
         href="#summary" 
-        class="flex flex-col items-center group"
+        class="flex flex-col items-center group px-4"
         @click.prevent="smoothScroll('#summary')"
       >
-        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
-        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Summary</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 group-hover:text-blue-600 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span class="text-sm font-medium text-gray-600 group-hover:text-blue-600 transition-colors duration-300">Summary</span>
       </a>
       <a 
         href="#camp-overview" 
-        class="flex flex-col items-center group"
+        class="flex flex-col items-center group px-4"
         @click.prevent="smoothScroll('#camp-overview')"
       >
-        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
-        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Overview</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 group-hover:text-blue-600 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <span class="text-sm font-medium text-gray-600 group-hover:text-blue-600 transition-colors duration-300">Overview</span>
       </a>
       <a 
         href="#itinerary" 
-        class="flex flex-col items-center group"
+        class="flex flex-col items-center group px-4"
         @click.prevent="smoothScroll('#itinerary')"
       >
-        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
-        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Itinerary</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 group-hover:text-blue-600 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        <span class="text-sm font-medium text-gray-600 group-hover:text-blue-600 transition-colors duration-300">Itinerary</span>
       </a>
       <a 
         href="#cancellation-policy" 
-        class="flex flex-col items-center group"
+        class="flex flex-col items-center group px-4"
         @click.prevent="smoothScroll('#cancellation-policy')"
       >
-        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
-        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Policy</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 group-hover:text-blue-600 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+        <span class="text-sm font-medium text-gray-600 group-hover:text-blue-600 transition-colors duration-300">Policy</span>
       </a>
     </nav>
   </div>
@@ -76,7 +84,7 @@
   <div 
     id="floating-apply-button"
     v-show="shouldShowApplyNowButton" 
-    class="fixed bottom-16 right-8 z-50"
+    class="fixed bottom-20 right-8 z-50"
   >
     <a
       href="#booking"
