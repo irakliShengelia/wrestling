@@ -1,20 +1,11 @@
 <template>
   <div 
+    id="navigation-sidebar"
     class="fixed right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-50 transition-all duration-300"
     :class="{'opacity-0 translate-x-4': !shouldShowApplyNowButton, 'opacity-100 translate-x-0': shouldShowApplyNowButton}"
   >
     <div class="bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-gray-700/50">
       <nav class="space-y-3 md:space-y-4">
-        <a 
-          href="#hero" 
-          class="block group"
-          @click.prevent="smoothScroll('#hero')"
-        >
-          <div class="flex items-center">
-            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Hero</span>
-          </div>
-        </a>
         <a 
           href="#summary" 
           class="block group"
@@ -26,22 +17,42 @@
           </div>
         </a>
         <a 
-          href="#booking" 
+          href="#camp-overview" 
           class="block group"
-          @click.prevent="smoothScroll('#booking')"
+          @click.prevent="smoothScroll('#camp-overview')"
         >
           <div class="flex items-center">
             <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Booking</span>
+            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Camp Overview</span>
+          </div>
+        </a>
+        <a 
+          href="#itinerary" 
+          class="block group"
+          @click.prevent="smoothScroll('#itinerary')"
+        >
+          <div class="flex items-center">
+            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Itinerary</span>
+          </div>
+        </a>
+        <a 
+          href="#cancellation-policy" 
+          class="block group"
+          @click.prevent="smoothScroll('#cancellation-policy')"
+        >
+          <div class="flex items-center">
+            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Cancellation Policy</span>
           </div>
         </a>
       </nav>
     </div>
   </div>
   <section
+    id="hero"
     class="h-[80vh] bg-cover bg-center flex items-center justify-center relative"
     style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
-    id="hero"
   >
     <div class="max-w-4xl mx-auto px-4 md:px-8 text-white text-center md:text-left">
       <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Sky-Running Camp with <span class="text-5xl md:text-7xl">Pascal Egli</span></h1>
@@ -72,6 +83,7 @@
   </section>
 
   <div 
+    id="floating-apply-button"
     v-show="shouldShowApplyNowButton" 
     class="fixed bottom-8 right-8 z-50"
   >
@@ -84,7 +96,6 @@
     </a>
   </div>
 
-  
   <section id="summary" class="py-16 px-6 bg-white text-left relative">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-5xl font-bold text-black">Kazbegi Skyrunning Camp</h1>
@@ -108,7 +119,6 @@
     </a>
   </section>
 
-  <!-- Camp Overview Section -->
   <section id="camp-overview" class="py-16 px-6 relative bg-cover" style="background-image: url('https://shared-img.digitize.ge/overview-bg.jpg');">
     <div class="bg-white bg-opacity-90 p-10 rounded-xl max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold text-blue-600">Camp Overview</h2>
@@ -142,7 +152,7 @@
       </ul>
       <p class="text-lg text-gray-800 mt-4"><strong>Note:</strong> Airfare and hotels in Tbilisi are not included.</p>
     </div>
-    <a href="#daily-itinerary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" @click.prevent="smoothScroll('#daily-itinerary')">
+    <a href="#itinerary" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce" @click.prevent="smoothScroll('#itinerary')">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 4v16m0 0l-4-4m4 4l4-4" />
       </svg>
@@ -150,7 +160,7 @@
   </section>
 
   <!-- Daily Itinerary Section -->
-  <section id="daily-itinerary" class="py-16 px-6 bg-white text-left shadow-lg relative">
+  <section id="itinerary" class="py-16 px-6 bg-white text-left shadow-lg relative">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold text-blue-600 mb-6">Daily Itinerary</h2>
       
