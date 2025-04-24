@@ -1,4 +1,23 @@
 <template>
+  <Head>
+    <title>Skyrunning Camp in Georgia | Caucasus Collective</title>
+    <meta name="description" content="Join our exclusive skyrunning camp in Georgia's Caucasus mountains. Experience high-altitude endurance training, technical trail running, and breathtaking alpine landscapes." />
+    <meta name="keywords" content="skyrunning, trail running, Georgia, Caucasus mountains, endurance training, alpine running, mountain running" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://caucasuscollective.com/skyrunning-camp" />
+    <meta property="og:title" content="Skyrunning Camp in Georgia | Caucasus Collective" />
+    <meta property="og:description" content="Join our exclusive skyrunning camp in Georgia's Caucasus mountains. Experience high-altitude endurance training, technical trail running, and breathtaking alpine landscapes." />
+    <meta property="og:image" content="https://shared-img.digitize.ge/skyrunning-hero.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://caucasuscollective.com/skyrunning-camp" />
+    <meta property="twitter:title" content="Skyrunning Camp in Georgia | Caucasus Collective" />
+    <meta property="twitter:description" content="Join our exclusive skyrunning camp in Georgia's Caucasus mountains. Experience high-altitude endurance training, technical trail running, and breathtaking alpine landscapes." />
+    <meta property="twitter:image" content="https://shared-img.digitize.ge/skyrunning-hero.jpg" />
+  </Head>
   <div 
     id="bottom-navigation"
     v-show="shouldShowBottomNav"
