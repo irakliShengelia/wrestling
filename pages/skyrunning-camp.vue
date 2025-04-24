@@ -1,4 +1,43 @@
 <template>
+  <div 
+    class="fixed right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-50 transition-all duration-300"
+    :class="{'opacity-0 translate-x-4': !shouldShowApplyNowButton, 'opacity-100 translate-x-0': shouldShowApplyNowButton}"
+  >
+    <div class="bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-gray-700/50">
+      <nav class="space-y-3 md:space-y-4">
+        <a 
+          href="#hero" 
+          class="block group"
+          @click.prevent="smoothScroll('#hero')"
+        >
+          <div class="flex items-center">
+            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Hero</span>
+          </div>
+        </a>
+        <a 
+          href="#summary" 
+          class="block group"
+          @click.prevent="smoothScroll('#summary')"
+        >
+          <div class="flex items-center">
+            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Summary</span>
+          </div>
+        </a>
+        <a 
+          href="#booking" 
+          class="block group"
+          @click.prevent="smoothScroll('#booking')"
+        >
+          <div class="flex items-center">
+            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
+            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Booking</span>
+          </div>
+        </a>
+      </nav>
+    </div>
+  </div>
   <section
     class="h-[80vh] bg-cover bg-center flex items-center justify-center relative"
     style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
