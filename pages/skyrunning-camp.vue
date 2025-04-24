@@ -4,7 +4,7 @@
     style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
   >
     <div class="max-w-4xl mx-auto px-4 md:px-8 text-white text-center md:text-left">
-      <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Sky-Running Camp with Pascal Egli</h1>
+      <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Sky-Running Camp with <span class="text-5xl md:text-7xl">Pascal Egli</span></h1>
       <p class="text-lg md:text-xl mt-4 text-white drop-shadow-lg">A high-altitude trail running camp across Georgia's majestic mountains</p>
       <div class="mt-6 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
         <a
