@@ -117,10 +117,14 @@
   <section id="summary" class="py-16 px-6 bg-white text-left relative">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-5xl font-bold text-black">Kazbegi Skyrunning Camp</h1>
-      <h2 class="text-3xl font-semibold text-blue-600 mt-2">For intermediate to advanced trail runners</h2>
+      <h2 class="text-3xl font-semibold text-blue-600 mt-2">From beginners to advanced trail runners</h2>
       <p class="text-lg text-gray-700 mt-4">
         An extraordinary week of high-altitude running in the Caucasus mountains of Georgia — a skyrunner's dream through untamed trails, ancient culture, and breathtaking views.
       </p>
+      <ul class="text-lg text-gray-700 mt-4 list-disc list-inside pl-5">
+        <li>Average daily distance: 20km</li>
+        <li>Average daily climb: 1200 meters</li>
+      </ul>
 
       <h3 class="text-2xl font-semibold text-black mt-6">2025 Dates</h3>
       <div class="dates mt-2">
