@@ -21,7 +21,7 @@
   <div 
     id="bottom-navigation"
     v-show="shouldShowBottomNav"
-    class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-lg transition-all duration-300 transform"
+    class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-lg transition-all duration-300 transform md:hidden"
     :class="shouldShowBottomNav ? 'translate-y-0' : 'translate-y-full'"
   >
     <nav class="flex justify-around items-center py-4">
