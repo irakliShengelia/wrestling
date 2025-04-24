@@ -1,53 +1,44 @@
 <template>
   <div 
-    id="navigation-sidebar"
-    class="fixed right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-50 transition-all duration-300"
-    :class="{'opacity-0 translate-x-4': !shouldShowSideNav, 'opacity-100 translate-x-0': shouldShowSideNav}"
+    id="bottom-navigation"
+    v-show="shouldShowBottomNav"
+    class="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-sm border-t border-gray-700/50 transition-all duration-300 transform"
+    :class="shouldShowBottomNav ? 'translate-y-0' : 'translate-y-full'"
   >
-    <div class="bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-gray-700/50">
-      <nav class="space-y-3 md:space-y-4">
-        <a 
-          href="#summary" 
-          class="block group"
-          @click.prevent="smoothScroll('#summary')"
-        >
-          <div class="flex items-center">
-            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Summary</span>
-          </div>
-        </a>
-        <a 
-          href="#camp-overview" 
-          class="block group"
-          @click.prevent="smoothScroll('#camp-overview')"
-        >
-          <div class="flex items-center">
-            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Camp Overview</span>
-          </div>
-        </a>
-        <a 
-          href="#itinerary" 
-          class="block group"
-          @click.prevent="smoothScroll('#itinerary')"
-        >
-          <div class="flex items-center">
-            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Itinerary</span>
-          </div>
-        </a>
-        <a 
-          href="#cancellation-policy" 
-          class="block group"
-          @click.prevent="smoothScroll('#cancellation-policy')"
-        >
-          <div class="flex items-center">
-            <div class="w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mr-2 md:mr-3 group-hover:scale-125 transition-transform duration-300"></div>
-            <span class="text-xs md:text-sm text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Cancellation Policy</span>
-          </div>
-        </a>
-      </nav>
-    </div>
+    <nav class="flex justify-around items-center py-3">
+      <a 
+        href="#summary" 
+        class="flex flex-col items-center group"
+        @click.prevent="smoothScroll('#summary')"
+      >
+        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
+        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Summary</span>
+      </a>
+      <a 
+        href="#camp-overview" 
+        class="flex flex-col items-center group"
+        @click.prevent="smoothScroll('#camp-overview')"
+      >
+        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
+        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Overview</span>
+      </a>
+      <a 
+        href="#itinerary" 
+        class="flex flex-col items-center group"
+        @click.prevent="smoothScroll('#itinerary')"
+      >
+        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
+        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Itinerary</span>
+      </a>
+      <a 
+        href="#cancellation-policy" 
+        class="flex flex-col items-center group"
+        @click.prevent="smoothScroll('#cancellation-policy')"
+      >
+        <div class="w-2 h-2 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 mb-1 group-hover:scale-125 transition-transform duration-300"></div>
+        <span class="text-xs text-gray-300 group-hover:text-blue-400 transition-colors duration-300">Policy</span>
+      </a>
+    </nav>
   </div>
   <section
     id="hero"
@@ -85,7 +76,7 @@
   <div 
     id="floating-apply-button"
     v-show="shouldShowApplyNowButton" 
-    class="fixed bottom-8 right-8 z-50"
+    class="fixed bottom-16 right-8 z-50"
   >
     <a
       href="#booking"
@@ -363,7 +354,7 @@ export default {
       errors: {},
       submitted: false,
       shouldShowApplyNowButton: false,
-      shouldShowSideNav: false,
+      shouldShowBottomNav: false,
       lastScrollY: 0,
       scrollTimeout: null
     };
@@ -373,7 +364,7 @@ export default {
       const element = document.querySelector(target);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
-        this.shouldShowSideNav = false;
+        this.shouldShowBottomNav = false;
       }
     },
     validateForm() {
@@ -414,15 +405,16 @@ export default {
         const bookingInView = bookingRect.top <= window.innerHeight && bookingRect.bottom >= 0;
         
         this.shouldShowApplyNowButton = !heroInView && !bookingInView;
+        this.shouldShowBottomNav = !heroInView && !bookingInView;
         
         // Check scroll direction
         const currentScrollY = window.scrollY;
         if (currentScrollY > this.lastScrollY) {
           // Scrolling down
-          this.shouldShowSideNav = true;
+          this.shouldShowBottomNav = true;
         } else {
           // Scrolling up
-          this.shouldShowSideNav = false;
+          this.shouldShowBottomNav = false;
         }
         this.lastScrollY = currentScrollY;
 
@@ -433,7 +425,7 @@ export default {
 
         // Set new timeout to hide side nav after 1 second of no scrolling
         this.scrollTimeout = setTimeout(() => {
-          this.shouldShowSideNav = false;
+          this.shouldShowBottomNav = false;
         }, 1000);
       }
     }
