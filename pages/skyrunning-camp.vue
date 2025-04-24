@@ -2,6 +2,7 @@
   <section
     class="h-[80vh] bg-cover bg-center flex items-center justify-center relative"
     style="background-image: url('https://shared-img.digitize.ge/pascal_by_Thomas_Lutz-min%20(1).jpg');"
+    id="hero"
   >
     <div class="max-w-4xl mx-auto px-4 md:px-8 text-white text-center md:text-left">
       <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Sky-Running Camp with <span class="text-5xl md:text-7xl">Pascal Egli</span></h1>
@@ -30,6 +31,20 @@
     </a>
     <div class="absolute bottom-4 left-4 text-white text-sm bg-black bg-opacity-50 p-1 rounded">Photo by Thomas Lutz</div>
   </section>
+
+  <div 
+    v-show="shouldShowApplyNowButton" 
+    class="fixed bottom-8 right-8 z-50"
+  >
+    <a
+      href="#booking"
+      class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg uppercase shadow-lg transform hover:scale-105 transition-all duration-300"
+      @click.prevent="smoothScroll('#booking')"
+    >
+      Apply Now
+    </a>
+  </div>
+
   
   <section id="summary" class="py-16 px-6 bg-white text-left relative">
     <div class="max-w-4xl mx-auto">
@@ -279,7 +294,7 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import { createClient } from '@supabase/supabase-js'
 
 // Initialize Supabase client
@@ -297,7 +312,8 @@ export default {
         message: ''
       },
       errors: {},
-      submitted: false // New state to track submission
+      submitted: false,
+      shouldShowApplyNowButton: false
     };
   },
   methods: {
@@ -327,11 +343,33 @@ export default {
         if (error) {
           console.error('Error inserting data:', error);
         } else {
-          this.submitted = true; // Set submitted to true on successful submission
-          this.form = { name: '', email: '', level: 'beginner', message: '' }; // Reset form
+          this.submitted = true;
+          this.form = { name: '', email: '', level: 'beginner', message: '' };
         }
       }
+    },
+    checkVisibility() {
+      const hero = document.getElementById('hero');
+      const booking = document.getElementById('booking');
+      
+      if (hero && booking) {
+        const heroRect = hero.getBoundingClientRect();
+        const bookingRect = booking.getBoundingClientRect();
+        
+        // Check if neither section is in viewport
+        const heroInView = heroRect.top <= window.innerHeight && heroRect.bottom >= 0;
+        const bookingInView = bookingRect.top <= window.innerHeight && bookingRect.bottom >= 0;
+        
+        this.shouldShowApplyNowButton = !heroInView && !bookingInView;
+      }
     }
+  },
+  mounted() {
+    this.checkVisibility();
+    window.addEventListener('scroll', this.checkVisibility);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.checkVisibility);
   }
 }
 </script>
