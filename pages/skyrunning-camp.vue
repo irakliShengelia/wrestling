@@ -2,7 +2,7 @@
   <div 
     id="navigation-sidebar"
     class="fixed right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-50 transition-all duration-300"
-    :class="{'opacity-0 translate-x-4': !shouldShowApplyNowButton, 'opacity-100 translate-x-0': shouldShowApplyNowButton}"
+    :class="{'opacity-0 translate-x-4': !shouldShowSideNav, 'opacity-100 translate-x-0': shouldShowSideNav}"
   >
     <div class="bg-gradient-to-br from-black/90 to-gray-900/90 backdrop-blur-sm rounded-lg p-3 md:p-4 shadow-xl border border-gray-700/50">
       <nav class="space-y-3 md:space-y-4">
@@ -362,7 +362,10 @@ export default {
       },
       errors: {},
       submitted: false,
-      shouldShowApplyNowButton: false
+      shouldShowApplyNowButton: false,
+      shouldShowSideNav: false,
+      lastScrollY: 0,
+      scrollTimeout: null
     };
   },
   methods: {
@@ -370,6 +373,7 @@ export default {
       const element = document.querySelector(target);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
+        this.shouldShowSideNav = false;
       }
     },
     validateForm() {
@@ -410,6 +414,27 @@ export default {
         const bookingInView = bookingRect.top <= window.innerHeight && bookingRect.bottom >= 0;
         
         this.shouldShowApplyNowButton = !heroInView && !bookingInView;
+        
+        // Check scroll direction
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > this.lastScrollY) {
+          // Scrolling down
+          this.shouldShowSideNav = true;
+        } else {
+          // Scrolling up
+          this.shouldShowSideNav = false;
+        }
+        this.lastScrollY = currentScrollY;
+
+        // Clear existing timeout
+        if (this.scrollTimeout) {
+          clearTimeout(this.scrollTimeout);
+        }
+
+        // Set new timeout to hide side nav after 1 second of no scrolling
+        this.scrollTimeout = setTimeout(() => {
+          this.shouldShowSideNav = false;
+        }, 1000);
       }
     }
   },
@@ -419,6 +444,9 @@ export default {
   },
   unmounted() {
     window.removeEventListener('scroll', this.checkVisibility);
+    if (this.scrollTimeout) {
+      clearTimeout(this.scrollTimeout);
+    }
   }
 }
 </script>
