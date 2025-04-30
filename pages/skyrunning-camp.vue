@@ -132,7 +132,13 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
           </svg>
-          Average climb: 1200m / day
+          Average climb: 1200m / day (Elevation: 1700m-3200m)
+        </div>
+        <div class="inline-flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+          </svg>
+          Accommodation elevation: ~1700m
         </div>
         <div class="inline-flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -180,13 +186,13 @@
       <p class="text-lg text-gray-800 mt-4">
         If you're a trail runner or road runner seeking the next level of adventure, this camp is for you. You don't need to be a racer — just in good shape and ready to run for 6–8 hours daily with substantial elevation gain.
       </p>
-      <h3 class="text-2xl font-semibold text-black mt-6">Fitness Requirements</h3>
+      <h3 class="text-2xl font-semibold text-black mt-6">Getting to Tbilisi</h3>
       <p class="text-lg text-gray-800 mt-4">
-        This is a high-effort trip with daily outings of 6–8 hours and elevation gains of up to 1500m. You should be in excellent hiking/running condition and capable of mountain terrain. Not sure? Let's chat.
+        Tbilisi, the vibrant capital of Georgia, is accessible from several major cities in Europe and the US. The primary gateway is Tbilisi International Airport (TBS). For travelers from Europe, direct flights are available from cities such as Paris, Berlin, and Warsaw, with airlines like Lufthansa and Air France providing convenient options. From the US, while there are no direct flights, you can easily connect through major European hubs like Frankfurt, Istanbul, or Amsterdam. Airlines such as Turkish Airlines and KLM offer seamless connections, making your journey to Tbilisi smooth and efficient.
       </p>
       <h3 class="text-2xl font-semibold text-black mt-6">What's Included</h3>
       <ul class="text-lg text-gray-800 mt-4 list-disc list-inside pl-5">
-        <li>All meals during the camp</li>
+        <li>A lot of delicious, nutritious food! Please let us know your dietary requirements in advance</li>
         <li>Guided trail runs with experienced instructors</li>
         <li>Transportation from Tbilisi to Kazbegi and back</li>
         <li>Daily snacks and hydration support</li>
