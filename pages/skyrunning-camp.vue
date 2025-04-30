@@ -222,7 +222,8 @@
           <li>Gentle acclimatization hike to <strong>Gergeti Trinity Church</strong> (2170 m) for stunning views.</li>
           <li>Evening safety briefing and overview of the week ahead.</li>
         </ul>
-        <p class="text-gray-800 mt-4"><strong>Accommodation:</strong>3* Hotel Kazbegi or local guesthouse (twin/double occupancy).</p>
+        <p class="text-gray-800 mt-4"><strong>Elevation:</strong> Starting at 1,740m, reaching up to 2,170m.</p>
+        <p class="text-gray-800 mt-4"><strong>Accommodation:</strong> 3* Hotel Kazbegi or local guesthouse (twin/double occupancy).</p>
       </div>
 
       <div class="mt-8">
@@ -237,6 +238,7 @@
           <li><span class="icon-distance"><i class="fas fa-ruler-combined"></i> ~15km / 9.3mi</span></li>
           <li><span class="icon-elevation"><i class="fas fa-arrow-up"></i> +800m | <i class="fas fa-arrow-down"></i> -800m</span></li>
           <li><span class="icon-time"><i class="fas fa-clock"></i> Approximate time: 4–5 hours</span></li>
+          <li><strong>Elevation:</strong> Starting at 1,750m, reaching up to 2,550m.</li>
           <li><strong>Accommodation:</strong> Return to Kazbegi lodging.</li>
         </ul>
       </div>
@@ -253,6 +255,7 @@
           <li><span class="icon-distance"><i class="fas fa-ruler-combined"></i> ~18km / 11mi</span></li>
           <li><span class="icon-elevation"><i class="fas fa-arrow-up"></i> +1100m | <i class="fas fa-arrow-down"></i> -1100m</span></li>
           <li><span class="icon-time"><i class="fas fa-clock"></i> Approximate time: 5–6 hours</span></li>
+          <li><strong>Elevation:</strong> Starting at 2,200m, reaching up to 3,338m.</li>
           <li><strong>Accommodation:</strong> Juta guesthouse or mountain hut (shared rooms).</li>
         </ul>
       </div>
@@ -268,6 +271,7 @@
           <li><span class="icon-distance"><i class="fas fa-ruler-combined"></i> ~17km / 10.5mi</span></li>
           <li><span class="icon-elevation"><i class="fas fa-arrow-up"></i> +950m | <i class="fas fa-arrow-down"></i> -950m</span></li>
           <li><span class="icon-time"><i class="fas fa-clock"></i> Approximate time: 5–6 hours</span></li>
+          <li><strong>Elevation:</strong> Starting at 1,800m, reaching up to 2,750m.</li>
           <li><strong>Accommodation:</strong> Return to Kazbegi base.</li>
         </ul>
       </div>
@@ -278,6 +282,7 @@
           <li>Enjoy a well-earned rest day - relax or soak in views from a cafe terrace.</li>
           <li>Optional cultural tour to <strong>Dariali Monastery</strong>, <strong>Gveleti Waterfalls</strong>, or a cheese-making experience.</li>
         </ul>
+        <p class="text-gray-800 mt-4"><strong>Elevation:</strong> Activities around 1,700m to 2,000m.</p>
         <p class="text-gray-800 mt-4"><strong>Accommodation:</strong> Kazbegi guesthouse/hotel.</p>
       </div>
 
@@ -292,6 +297,7 @@
           <li><span class="icon-distance"><i class="fas fa-ruler-combined"></i> ~20km / 12.4mi</span></li>
           <li><span class="icon-elevation"><i class="fas fa-arrow-up"></i> +1200m | <i class="fas fa-arrow-down"></i> -1200m</span></li>
           <li><span class="icon-time"><i class="fas fa-clock"></i> Approximate time: 6–7 hours</span></li>
+          <li><strong>Elevation:</strong> Starting at 1,750m, reaching up to 2,950m.</li>
           <li><strong>Accommodation:</strong> Final night in Kazbegi.</li>
         </ul>
       </div>
@@ -302,6 +308,7 @@
           <li>After breakfast, pack up and transfer back to Tbilisi.</li>
           <li>Stop at <strong>Ananuri Fortress</strong> or <strong>Zhinvali Reservoir</strong> for photos and snacks.</li>
         </ul>
+        <p class="text-gray-800 mt-4"><strong>Elevation:</strong> Starting at 1,740m, descending to 600m in Tbilisi.</p>
         <p class="text-gray-800 mt-4">This marks the end of an unforgettable week in the Caucasus.</p>
       </div>
     </div>
