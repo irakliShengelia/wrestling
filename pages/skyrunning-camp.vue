@@ -156,7 +156,7 @@
 
       <h3 class="text-2xl font-semibold text-black mt-6">2025 Dates</h3>
       <div class="dates mt-2">
-        <p class="text-lg text-blue-600"><strong>Sept 22 - Sep 29, 2025</strong> (6 spots left)</p>
+        <p class="text-lg text-blue-600"><strong>Sept 22 - Sep 29, 2025</strong> (10 spots left)</p>
       </div>
 
       <p class="text-lg font-bold text-black mt-4"><strong>Price:</strong> <span class="line-through">2700 USD</span> <span class="text-red-600">2495 USD</span> (Earlybird)</p>
