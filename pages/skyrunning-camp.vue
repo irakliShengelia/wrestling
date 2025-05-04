@@ -336,6 +336,26 @@
     </a>
   </section>
 
+    <!-- Pascal Section -->
+    <section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6 text-blue-600">About Pascal Egli</h2>
+        <div class="w-24 h-1 bg-blue-600 mx-auto mb-10"></div>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+          Pascal Egli is a mountain athlete and geoscientist from Switzerland. He has won numerous skyraces and trailrunning races in Europe and worldwide; he was the 2018 Skyrunner World Series champion and the 2017 vice-world champion of long-distance mountain running. He has also been competing at a high level in ski mountaineering since 2015.
+        </p>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-6 leading-relaxed">
+          Pascal has speed-climbed mountains between 2000 and 6900 m in the Alps, in the Andes, in the Himalayas, and in the Caucasus, and he has been coaching athletes since 2019.
+        </p>
+        <p class="text-lg text-gray-700 max-w-3xl mx-auto mt-6 leading-relaxed">
+          He is a co-founder of the Pro Trail Runners Association, and has been contributing to several environmental initiatives and associations in mountain sports and elsewhere. Currently, he is an associate professor in glaciology in Trondheim, Norway.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Skyrunning Mission Section -->
   <section class="py-16 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
