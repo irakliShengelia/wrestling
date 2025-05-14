@@ -36,23 +36,25 @@
             <div class="h-80 overflow-hidden relative">
               <div class="absolute inset-0 red-gradient opacity-40 z-10"></div>
               <img
-                src="https://jarjishiukashvili.com/assets/images/container26.jpg?v=5dab7b3d"
+                src="https://shared-img.digitize.ge/jarji.jpeg"
                 alt="Jarji Shiukashvili"
                 class="w-full h-full object-cover object-center"
               />
               <div class="absolute bottom-0 left-0 right-0 p-6 z-20">
                 <h3 class="text-2xl font-bold">Jarji Shiukashvili</h3>
-                <p class="text-ufc-red font-bold mt-1">Combat Sports Director</p>
+                <p class="text-ufc-red font-bold mt-1">Physical Preparation Specialist</p>
               </div>
             </div>
             <div class="p-6">
               <p class="text-muted leading-relaxed">
-                A former Olympic wrestler and 3-time national champion, Jarji brings over 15 years of elite coaching experience to our wrestling program. His methodical approach to technique development and mental conditioning has produced champions across multiple weight classes and disciplines.
+                Jarji Shiukashvili brings a decade of experience to his role as a wrestling strength and conditioning coach. His approach combines technical expertise with practical understanding of what athletes need to succeed in competition.
               </p>
-              <div class="mt-6 flex items-center">
-                <div class="bg-ufc-red h-px flex-grow"></div>
-                <p class="px-4 text-sm text-muted italic">"True strength is found at the edge of your limits."</p>
-              </div>
+              <p class="text-muted leading-relaxed mt-4">
+                In his free time, he enjoys the peace and challenge of outdoor activities - trail running through local paths, hiking in the mountains, or taking his bike out for rides.
+              </p>
+              <p class="text-muted leading-relaxed mt-4">
+                As one of the founders of "Imodzrave" gym, Jarji has created a space where competitive athletes train alongside everyday people in a supportive community. The gym has become known for its welcoming atmosphere where everyone, regardless of fitness level, receives personalized attention and encouragement.
+              </p>
             </div>
           </div>
           
@@ -95,10 +97,6 @@
               <p class="text-muted leading-relaxed">
                 As the owner of Kartveli Tours, one of Georgia's premier travel agencies, Irakli brings unparalleled logistics expertise and local connections to our operation. A sports enthusiast himself, he bridges the gap between extreme athletics and sustainable adventure tourism in the Caucasus region.
               </p>
-              <div class="mt-6 flex items-center">
-                <div class="bg-yellow-600 h-px flex-grow"></div>
-                <p class="px-4 text-sm text-muted italic">"Adventure begins where the predictable ends."</p>
-              </div>
             </div>
           </div>
         </div>
