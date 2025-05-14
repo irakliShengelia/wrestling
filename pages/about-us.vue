@@ -42,18 +42,12 @@
               />
               <div class="absolute bottom-0 left-0 right-0 p-6 z-20">
                 <h3 class="text-2xl font-bold">Jarji Shiukashvili</h3>
-                <p class="text-ufc-red font-bold mt-1">Physical Preparation Specialist</p>
+                <p class="font-bold mt-1">Physical Preparation Specialist</p>
               </div>
             </div>
             <div class="p-6">
               <p class="text-muted leading-relaxed">
-                Jarji Shiukashvili brings a decade of experience to his role as a wrestling strength and conditioning coach. His approach combines technical expertise with practical understanding of what athletes need to succeed in competition.
-              </p>
-              <p class="text-muted leading-relaxed mt-4">
-                In his free time, he enjoys the peace and challenge of outdoor activities - trail running through local paths, hiking in the mountains, or taking his bike out for rides.
-              </p>
-              <p class="text-muted leading-relaxed mt-4">
-                As one of the founders of "Imodzrave" gym, Jarji has created a space where competitive athletes train alongside everyday people in a supportive community. The gym has become known for its welcoming atmosphere where everyone, regardless of fitness level, receives personalized attention and encouragement.
+                Jarji Shiukashvili has spent a decade as a wrestling strength coach, developing effective training methods based on real competitive needs. When not coaching, he recharges through trail running, hiking, and biking in the outdoors. At "Imodzrave," the gym he co-founded, he's built a supportive community where both serious athletes and everyday fitness enthusiasts train together and push each other to improve.
               </p>
             </div>
           </div>
@@ -90,7 +84,7 @@
               />
               <div class="absolute bottom-0 left-0 right-0 p-6 z-20">
                 <h3 class="text-2xl font-bold">Irakli Shengelia</h3>
-                <p class="text-gold font-bold mt-1">Adventure & Logistics Director</p>
+                <p class="font-bold mt-1">Logistics Director</p>
               </div>
             </div>
             <div class="p-6">
