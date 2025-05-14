@@ -67,7 +67,7 @@
               />
               <div class="absolute bottom-0 left-0 right-0 p-6 z-20">
                 <h3 class="text-2xl font-bold">Dachi Mikhelidze</h3>
-                <p class="text-ufc-blue font-bold mt-1">Fitness Coach</p>
+                <p class="font-bold mt-1">Fitness Coach</p>
               </div>
             </div>
             <div class="p-6">
