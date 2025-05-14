@@ -61,23 +61,19 @@
             <div class="h-80 overflow-hidden relative">
               <div class="absolute inset-0 blue-gradient opacity-40 z-10"></div>
               <img
-                src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://shared-img.digitize.ge/dachi.jpeg"
                 alt="Dachi Mikhelidze"
                 class="w-full h-full object-cover object-center"
               />
               <div class="absolute bottom-0 left-0 right-0 p-6 z-20">
                 <h3 class="text-2xl font-bold">Dachi Mikhelidze</h3>
-                <p class="text-ufc-blue font-bold mt-1">High Altitude Training Specialist</p>
+                <p class="text-ufc-blue font-bold mt-1">Fitness Coach</p>
               </div>
             </div>
             <div class="p-6">
               <p class="text-muted leading-relaxed">
-                A legendary figure in the ultra-running community, Dachi has conquered some of the world's most grueling mountain races. His intimate knowledge of the Caucasus trails and pioneering work in high-altitude training protocols have revolutionized endurance conditioning for athletes worldwide.
+                Dachi Mikhelidze is a fitness coach with 12 years of experience in movement—but his true calling lives in the wild. Whether it’s hiking mountain trails, cycling open roads, or chasing golden light with a camera in hand, Dachi thrives where nature meets motion. His mission is simple: to live fully, be in the moment, and help others rediscover the joy of being outside.
               </p>
-              <div class="mt-6 flex items-center">
-                <div class="bg-ufc-blue h-px flex-grow"></div>
-                <p class="px-4 text-sm text-muted italic">"The mountain doesn't care about your excuses."</p>
-              </div>
             </div>
           </div>
           
